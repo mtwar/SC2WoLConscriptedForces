@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CObjective id="TRaynor01_42">
+        <Type value="Optional"/>
+        <UserReference value="MissionObjective;TRaynor01_4"/>
+        <Name value="ConversationState/MissionObjective/TRaynor01_4"/>
+        <Description value="Objective/Description/TRaynor01_4"/>
+    </CObjective>
+    <CObjective id="TRaynor01_52">
+        <Type value="Optional"/>
+        <UserReference value="MissionObjective;TRaynor01_5"/>
+        <Name value="ConversationState/MissionObjective/TRaynor01_5"/>
+        <Description value="Objective/Description/TRaynor01_5"/>
+    </CObjective>
     <CObjective id="TRaynor02_22">
         <Name value="ConversationState/MissionObjective/TRaynor02_3"/>
         <Description value="Objective/Description/TRaynor02_3"/>

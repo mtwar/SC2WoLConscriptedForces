@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CUser id="CampaignConstants">
+        <Instances index="2">
+            <Int Int="1">
+                <Field Id="Value"/>
+            </Int>
+        </Instances>
+        <Instances index="4">
+            <Int index="0" Int="30"/>
+        </Instances>
+    </CUser>
     <CUser id="Conscription">
         <Instances index="1">
             <GameLink index="0" removed="1"/>
@@ -253,10 +263,32 @@
             </Int>
         </Instances>
     </CUser>
+    <CUser id="Maps">
+        <Instances index="1">
+            <Int Int="20000">
+                <Field Id="RewardCredits"/>
+            </Int>
+        </Instances>
+    </CUser>
     <CUser id="MissionObjective">
+        <Instances index="4" Id="TRaynor01_4">
+            <Int Int="2">
+                <Field Id="RewardProtossFinal"/>
+            </Int>
+            <Text index="0" Text="UserData/MissionObjective/TRaynor01_4_Name"/>
+        </Instances>
+        <Instances index="5" Id="TRaynor01_5">
+            <Text index="0" Text="UserData/MissionObjective/TRaynor01_5_Name"/>
+        </Instances>
+        <Instances index="6" Id="TRaynor02_1">
+            <Text index="0" Text="UserData/MissionObjective/TRaynor02_1_Name"/>
+        </Instances>
+        <Instances index="7" Id="TRaynor02_2">
+            <Text index="0" Text="UserData/MissionObjective/TRaynor02_2_Name"/>
+        </Instances>
         <Instances index="8" Id="TRaynor02_3">
             <Int Int="2">
-                <Field Id="RewardProtossEach"/>
+                <Field Id="RewardProtossFinal"/>
             </Int>
             <Text index="0" Text="UserData/MissionObjective/TRaynor02_3_Name"/>
         </Instances>
@@ -267,35 +299,41 @@
             <Text index="0" Text="UserData/MissionObjective/TRaynor02_4_Name"/>
         </Instances>
         <Instances index="10" Id="TRaynor03_1">
+            <Int index="0" removed="1"/>
             <Text index="0" Text="UserData/MissionObjective/TRaynor03_1_Name"/>
         </Instances>
         <Instances index="11" Id="TRaynor03_2">
             <Text index="0" Text="UserData/MissionObjective/TRaynor03_2_Name"/>
-        </Instances>
-        <Instances index="12" Id="THanson01_1">
-            <Int index="0" removed="1"/>
-            <Text index="0" Text="UserData/MissionObjective/THanson01_1_Name"/>
-        </Instances>
-        <Instances index="13" Id="THanson01_2">
-            <Text index="0" Text="UserData/MissionObjective/THanson01_2_Name"/>
             <Text index="1" removed="1"/>
         </Instances>
-        <Instances index="14" Id="THanson01_3">
+        <Instances index="12" Id="TRaynor03_1">
+            <Text index="0" Text="UserData/MissionObjective/TRaynor03_1_Name"/>
+            <Text index="1" removed="1"/>
+            <Text index="2" removed="1"/>
+        </Instances>
+        <Instances index="13" Id="TRaynor03_2">
+            <Int index="0" removed="1"/>
+            <Text index="0" Text="UserData/MissionObjective/TRaynor03_2_Name"/>
+        </Instances>
+        <Instances index="14" Id="THanson01_1">
+            <Text index="0" Text="UserData/MissionObjective/THanson01_1_Name"/>
+        </Instances>
+        <Instances index="15" Id="THanson01_2">
+            <Text index="0" Text="UserData/MissionObjective/THanson01_2_Name"/>
+        </Instances>
+        <Instances index="16" Id="THanson01_3">
             <Int Int="1">
                 <Field Id="RewardZergEach"/>
             </Int>
             <Text index="0" Text="UserData/MissionObjective/THanson01_3_Name"/>
-            <Text index="1" removed="1"/>
-            <Text index="2" removed="1"/>
         </Instances>
-        <Instances index="15" Id="THanson01_4">
-            <Int index="0" removed="1"/>
+        <Instances index="17" Id="THanson01_4">
             <Text index="0" Text="UserData/MissionObjective/THanson01_4_Name"/>
             <Text Text="UserData/MissionObjective/THanson01_4_FormatText">
                 <Field Id="FormatText"/>
             </Text>
         </Instances>
-        <Instances index="16" Id="THanson02_1">
+        <Instances index="18" Id="THanson02_1">
             <Text index="0" Text="UserData/MissionObjective/THanson02_1_Name"/>
             <Text Text="UserData/MissionObjective/THanson02_1_FormatTextSingle">
                 <Field Id="FormatTextSingle"/>
@@ -304,31 +342,34 @@
                 <Field Id="FormatText"/>
             </Text>
         </Instances>
-        <Instances index="17" Id="THanson02_2">
+        <Instances index="19" Id="THanson02_2">
             <Int Int="1">
                 <Field Id="RewardZergEach"/>
             </Int>
             <Text index="0" Text="UserData/MissionObjective/THanson02_2_Name"/>
-        </Instances>
-        <Instances index="18" Id="THanson03A_1">
-            <Text index="0" Text="UserData/MissionObjective/THanson03A_1_Name"/>
-        </Instances>
-        <Instances index="19" Id="THanson03A_2">
-            <Text index="0" Text="UserData/MissionObjective/THanson03A_2_Name"/>
-        </Instances>
-        <Instances index="20" Id="THanson03A_3">
-            <Text index="0" Text="UserData/MissionObjective/THanson03A_3_Name"/>
-        </Instances>
-        <Instances index="21" Id="THanson03A_4">
-            <Text index="0" Text="UserData/MissionObjective/THanson03A_4_Name"/>
             <Text index="1" removed="1"/>
             <Text index="2" removed="1"/>
         </Instances>
-        <Instances index="22" Id="THanson03A_5">
+        <Instances index="20" Id="THanson03A_1">
+            <Text index="0" Text="UserData/MissionObjective/THanson03A_1_Name"/>
+            <Text index="1" removed="1"/>
+        </Instances>
+        <Instances index="21" Id="THanson03A_2">
+            <Text index="0" Text="UserData/MissionObjective/THanson03A_2_Name"/>
+        </Instances>
+        <Instances index="22" Id="THanson03A_3">
+            <Int index="0" removed="1"/>
+            <Text index="0" Text="UserData/MissionObjective/THanson03A_3_Name"/>
+        </Instances>
+        <Instances index="23" Id="THanson03A_4">
+            <Text index="0" Text="UserData/MissionObjective/THanson03A_4_Name"/>
+        </Instances>
+        <Instances index="24" Id="THanson03A_5">
             <Text index="0" Text="UserData/MissionObjective/THanson03A_5_Name"/>
             <Text index="1" removed="1"/>
         </Instances>
-        <Instances index="23" Id="THanson03B_1">
+        <Instances index="25" Id="THanson03B_1">
+            <Int index="0" removed="1"/>
             <Text index="0" Text="UserData/MissionObjective/THanson03B_1_Name"/>
             <Text Text="UserData/MissionObjective/THanson03B_1_FormatText">
                 <Field Id="FormatText"/>
@@ -337,106 +378,99 @@
                 <Field Id="FormatTextSingle"/>
             </Text>
         </Instances>
-        <Instances index="24" Id="TTosh01_1">
-            <Int index="0" removed="1"/>
+        <Instances index="26" Id="TTosh01_1">
             <Text index="0" Text="UserData/MissionObjective/TTosh01_1_Name"/>
             <Text Text="UserData/MissionObjective/TTosh01_1_FormatText">
                 <Field Id="FormatText"/>
             </Text>
         </Instances>
-        <Instances index="25" Id="TTosh01_2">
+        <Instances index="27" Id="TTosh01_2">
+            <Int index="0" removed="1"/>
             <Text index="0" Text="UserData/MissionObjective/TTosh01_2_Name"/>
         </Instances>
-        <Instances index="26" Id="TTosh01_3">
-            <Int Int="3">
+        <Instances index="28" Id="TTosh01_3">
+            <Int index="0" Int="3">
                 <Field Id="RewardZergFinal"/>
             </Int>
             <Text index="0" Text="UserData/MissionObjective/TTosh01_3_Name"/>
-            <Text index="1" removed="1"/>
         </Instances>
-        <Instances index="27" Id="TTosh02_1">
-            <Int index="0" removed="1"/>
+        <Instances index="29" Id="TTosh02_1">
             <Text index="0" Text="UserData/MissionObjective/TTosh02_1_Name"/>
         </Instances>
-        <Instances index="28" Id="TTosh02_2">
+        <Instances index="30" Id="TTosh02_2">
             <Text index="0" Text="UserData/MissionObjective/TTosh02_2_Name"/>
             <Text Text="UserData/MissionObjective/TTosh02_2_FormatText">
                 <Field Id="FormatText"/>
             </Text>
         </Instances>
-        <Instances index="29" Id="TTosh02_3">
-            <Int index="0" Int="1">
+        <Instances index="31" Id="TTosh02_3">
+            <Int Int="1">
                 <Field Id="RewardProtossEach"/>
             </Int>
             <Text index="0" Text="UserData/MissionObjective/TTosh02_3_Name"/>
         </Instances>
-        <Instances index="30" Id="TTosh03A_1">
-            <Int index="0" removed="1"/>
+        <Instances index="32" Id="TTosh03A_1">
             <Text index="0" Text="UserData/MissionObjective/TTosh03A_1_Name"/>
         </Instances>
-        <Instances index="31" Id="TTosh03A_2">
-            <Int Int="25000">
+        <Instances index="33" Id="TTosh03A_2">
+            <Int index="0" Int="25000">
                 <Field Id="RewardCreditsFinal"/>
             </Int>
             <Text index="0" Text="UserData/MissionObjective/TTosh03A_2_Name"/>
+            <Text index="1" removed="1"/>
+            <Text index="2" removed="1"/>
         </Instances>
-        <Instances index="32" Id="TTosh03A_3">
+        <Instances index="34" Id="TTosh03A_3">
             <Int Int="25000">
                 <Field Id="RewardCreditsFinal"/>
             </Int>
             <Text index="0" Text="UserData/MissionObjective/TTosh03A_3_Name"/>
         </Instances>
-        <Instances index="33" Id="TTosh03A_4">
+        <Instances index="35" Id="TTosh03A_4">
             <Text index="0" Text="UserData/MissionObjective/TTosh03A_4_Name"/>
         </Instances>
-        <Instances index="34" Id="TTosh03B_1">
+        <Instances index="36" Id="TTosh03B_1">
             <Text index="0" Text="UserData/MissionObjective/TTosh03B_1_Name"/>
         </Instances>
-        <Instances index="35" Id="TTosh03B_2">
-            <Int index="0" removed="1"/>
+        <Instances index="37" Id="TTosh03B_2">
             <Text index="0" Text="UserData/MissionObjective/TTosh03B_2_Name"/>
             <Text index="1" removed="1"/>
-            <Text index="2" removed="1"/>
         </Instances>
-        <Instances index="36" Id="TTosh03B_3">
+        <Instances index="38" Id="TTosh03B_3">
+            <Int index="0" removed="1"/>
             <Text index="0" Text="UserData/MissionObjective/TTosh03B_3_Name"/>
         </Instances>
-        <Instances index="37" Id="TTosh03B_4">
+        <Instances index="39" Id="TTosh03B_4">
             <Int Int="5000">
                 <Field Id="RewardCreditsEach"/>
             </Int>
             <Text index="0" Text="UserData/MissionObjective/TTosh03B_4_Name"/>
-            <Text Text="UserData/MissionObjective/TTosh03B_4_FormatText">
-                <Field Id="FormatText"/>
-            </Text>
-            <Text Text="UserData/MissionObjective/TTosh03B_4_FormatTextSingle">
-                <Field Id="FormatTextSingle"/>
-            </Text>
+            <Text index="1" Text="UserData/MissionObjective/TTosh03B_4_FormatText"/>
+            <Text index="2" Text="UserData/MissionObjective/TTosh03B_4_FormatTextSingle"/>
         </Instances>
-        <Instances index="38" Id="TTosh03B_5">
+        <Instances index="40" Id="TTosh03B_5">
             <Text index="0" Text="UserData/MissionObjective/TTosh03B_5_Name"/>
         </Instances>
-        <Instances index="39" Id="THorner01_1">
-            <Text index="0" Text="UserData/MissionObjective/THorner01_1_Name"/>
-            <Text index="1" removed="1"/>
-        </Instances>
-        <Instances index="40" Id="THorner01_2">
+        <Instances index="41" Id="THorner01_1">
             <Int index="0" removed="1"/>
+            <Text index="0" Text="UserData/MissionObjective/THorner01_1_Name"/>
+        </Instances>
+        <Instances index="42" Id="THorner01_2">
             <Text index="0" Text="UserData/MissionObjective/THorner01_2_Name"/>
         </Instances>
-        <Instances index="41" Id="THorner01_3">
+        <Instances index="43" Id="THorner01_3">
             <Text index="0" Text="UserData/MissionObjective/THorner01_3_Name"/>
-            <Text index="1" Text="UserData/MissionObjective/THorner01_3_FormatText"/>
-            <Text index="2" removed="1"/>
+            <Text Text="UserData/MissionObjective/THorner01_3_FormatText">
+                <Field Id="FormatText"/>
+            </Text>
         </Instances>
-        <Instances index="42" Id="THorner01_4">
+        <Instances index="44" Id="THorner01_4">
             <Int Int="1">
                 <Field Id="RewardZergEach"/>
             </Int>
             <Text index="0" Text="UserData/MissionObjective/THorner01_4_Name"/>
         </Instances>
-        <Instances index="43" Id="THorner02_1">
-            <Int index="0" removed="1"/>
+        <Instances index="45" Id="THorner02_1">
             <Text index="0" Text="UserData/MissionObjective/THorner02_1_Name"/>
             <Text Text="UserData/MissionObjective/THorner02_1_FormatText">
                 <Field Id="FormatText"/>
@@ -445,223 +479,232 @@
                 <Field Id="FormatTextSingle"/>
             </Text>
         </Instances>
-        <Instances index="44" Id="THorner02_2">
+        <Instances index="46" Id="THorner02_2">
+            <Int index="0" removed="1"/>
             <Text index="0" Text="UserData/MissionObjective/THorner02_2_Name"/>
         </Instances>
-        <Instances index="45" Id="THorner02_3">
-            <Int Int="1">
+        <Instances index="47" Id="THorner02_3">
+            <Int index="0">
                 <Field Id="RewardProtossEach"/>
             </Int>
             <Text index="0" Text="UserData/MissionObjective/THorner02_3_Name"/>
         </Instances>
-        <Instances index="46" Id="THorner03_1">
+        <Instances index="48" Id="THorner03_1">
             <Text index="0" Text="UserData/MissionObjective/THorner03_1_Name"/>
         </Instances>
-        <Instances index="47" Id="THorner03_2">
+        <Instances index="49" Id="THorner03_2">
             <Text index="0" Text="UserData/MissionObjective/THorner03_2_Name"/>
+            <Text index="1" removed="1"/>
         </Instances>
-        <Instances index="48" Id="THorner03_3">
-            <Int index="0" removed="1"/>
+        <Instances index="50" Id="THorner03_3">
             <Text index="0" Text="UserData/MissionObjective/THorner03_3_Name"/>
+            <Text index="1" removed="1"/>
         </Instances>
-        <Instances index="49" Id="THorner03_4">
-            <Int index="0" removed="1"/>
+        <Instances index="51" Id="THorner03_4">
             <Text index="0" Text="UserData/MissionObjective/THorner03_4_Name"/>
+            <Text index="1" removed="1"/>
         </Instances>
-        <Instances index="50" Id="THorner03_5">
+        <Instances index="52" Id="THorner03_5">
             <Int Int="100000">
                 <Field Id="RewardCreditsFinal"/>
             </Int>
             <Text index="0" Text="UserData/MissionObjective/THorner03_5_Name"/>
         </Instances>
-        <Instances index="51" Id="THorner03_6">
+        <Instances index="53" Id="THorner03_6">
             <Int Int="1">
                 <Field Id="RewardZergEach"/>
             </Int>
             <Text index="0" Text="UserData/MissionObjective/THorner03_6_Name"/>
-            <Text index="1" removed="1"/>
         </Instances>
-        <Instances index="52" Id="THorner04_1">
+        <Instances index="54" Id="THorner04_1">
             <Text index="0" Text="UserData/MissionObjective/THorner04_1_Name"/>
-            <Text index="1" removed="1"/>
         </Instances>
-        <Instances index="53" Id="THorner04_2">
+        <Instances index="55" Id="THorner04_2">
             <Text index="0" Text="UserData/MissionObjective/THorner04_2_Name"/>
-            <Text index="1" Text="UserData/MissionObjective/THorner04_2_FormatText"/>
+            <Text Text="UserData/MissionObjective/THorner04_2_FormatText">
+                <Field Id="FormatText"/>
+            </Text>
         </Instances>
-        <Instances index="54" Id="THorner04_3">
+        <Instances index="56" Id="THorner04_3">
+            <Int index="0" removed="1"/>
             <Text index="0" Text="UserData/MissionObjective/THorner04_3_Name"/>
             <Text Text="UserData/MissionObjective/THorner04_3_FormatText">
                 <Field Id="FormatText"/>
             </Text>
         </Instances>
-        <Instances index="55" Id="THorner04_4">
+        <Instances index="57" Id="THorner04_4">
+            <Int index="0" removed="1"/>
             <Text index="0" Text="UserData/MissionObjective/THorner04_4_Name"/>
             <Text Text="UserData/MissionObjective/THorner04_4_FormatText">
                 <Field Id="FormatText"/>
             </Text>
         </Instances>
-        <Instances index="56" Id="THorner05_1">
+        <Instances index="58" Id="THorner05_1">
             <Text index="0" Text="UserData/MissionObjective/THorner05_1_Name"/>
         </Instances>
-        <Instances index="57" Id="THorner05_2">
+        <Instances index="59" Id="THorner05_2">
+            <Int index="0" removed="1"/>
             <Text index="0" Text="UserData/MissionObjective/THorner05_2_Name"/>
         </Instances>
-        <Instances index="58" Id="THorner05_3">
-            <Int index="0" removed="1"/>
+        <Instances index="60" Id="THorner05_3">
             <Text index="0" Text="UserData/MissionObjective/THorner05_3_Name"/>
         </Instances>
-        <Instances index="59" Id="THorner05_4">
-            <Int index="0" removed="1"/>
+        <Instances index="61" Id="THorner05_4">
             <Text index="0" Text="UserData/MissionObjective/THorner05_4_Name"/>
         </Instances>
-        <Instances index="60" Id="THorner05_5">
+        <Instances index="62" Id="THorner05_5">
             <Int Int="3">
                 <Field Id="RewardZergFinal"/>
             </Int>
             <Text index="0" Text="UserData/MissionObjective/THorner05_5_Name"/>
         </Instances>
-        <Instances index="61" Id="THorner05_6">
+        <Instances index="63" Id="THorner05_6">
             <Text index="0" Text="UserData/MissionObjective/THorner05_6_Name"/>
         </Instances>
-        <Instances index="62" Id="TTychus01_1">
+        <Instances index="64" Id="TTychus01_1">
+            <Int index="0" removed="1"/>
             <Text index="0" Text="UserData/MissionObjective/TTychus01_1_Name"/>
         </Instances>
-        <Instances index="63" Id="TTychus01_2">
+        <Instances index="65" Id="TTychus01_2">
             <Int Int="1">
                 <Field Id="RewardProtossEach"/>
             </Int>
             <Text index="0" Text="UserData/MissionObjective/TTychus01_2_Name"/>
         </Instances>
-        <Instances index="64" Id="TTychus01_3">
+        <Instances index="66" Id="TTychus01_3">
             <Text index="0" Text="UserData/MissionObjective/TTychus01_3_Name"/>
         </Instances>
-        <Instances index="65" Id="TTychus02_1">
+        <Instances index="67" Id="TTychus02_1">
+            <Int index="0" removed="1"/>
             <Text index="0" Text="UserData/MissionObjective/TTychus02_1_Name"/>
         </Instances>
-        <Instances index="66" Id="TTychus02_2">
-            <Int index="0" removed="1"/>
+        <Instances index="68" Id="TTychus02_2">
             <Text index="0" Text="UserData/MissionObjective/TTychus02_2_Name"/>
         </Instances>
-        <Instances index="67" Id="TTychus02_3">
+        <Instances index="69" Id="TTychus02_3">
             <Text index="0" Text="UserData/MissionObjective/TTychus02_3_Name"/>
         </Instances>
-        <Instances index="68" Id="TTychus02_4">
-            <Int Int="1">
-                <Field Id="RewardProtossEach"/>
-            </Int>
+        <Instances index="70" Id="TTychus02_4">
             <Text index="0" Text="UserData/MissionObjective/TTychus02_4_Name"/>
         </Instances>
-        <Instances index="69" Id="TTychus03_1">
-            <Int index="0" removed="1"/>
+        <Instances index="71" Id="TTychus03_1">
             <Text index="0" Text="UserData/MissionObjective/TTychus03_1_Name"/>
         </Instances>
-        <Instances index="70" Id="TTychus03_2">
+        <Instances index="72" Id="TTychus03_2">
             <Text index="0" Text="UserData/MissionObjective/TTychus03_2_Name"/>
         </Instances>
-        <Instances index="71" Id="TTychus03_3">
-            <Int Int="3">
+        <Instances index="73" Id="TTychus03_3">
+            <Int index="0" Int="3">
                 <Field Id="RewardZergFinal"/>
             </Int>
             <Text index="0" Text="UserData/MissionObjective/TTychus03_3_Name"/>
         </Instances>
-        <Instances index="72" Id="TTychus04_1">
-            <Int index="0" removed="1"/>
+        <Instances index="74" Id="TTychus04_1">
             <Text index="0" Text="UserData/MissionObjective/TTychus04_1_Name"/>
+            <Text index="1" removed="1"/>
         </Instances>
-        <Instances index="73" Id="TTychus04_2">
+        <Instances index="75" Id="TTychus04_2">
             <Text index="0" Text="UserData/MissionObjective/TTychus04_2_Name"/>
+            <Text index="1" removed="1"/>
         </Instances>
-        <Instances index="74" Id="TTychus04_3">
-            <Int Int="1">
+        <Instances index="76" Id="TTychus04_3">
+            <Int index="0">
                 <Field Id="RewardProtossEach"/>
             </Int>
             <Text index="0" Text="UserData/MissionObjective/TTychus04_3_Name"/>
+            <Text index="1" removed="1"/>
         </Instances>
-        <Instances index="75" Id="TTychus05_1">
-            <Int index="0" removed="1"/>
+        <Instances index="77" Id="TTychus05_1">
             <Text index="0" Text="UserData/MissionObjective/TTychus05_1_Name"/>
+            <Text index="1" removed="1"/>
         </Instances>
-        <Instances index="76" Id="TTychus05_2">
+        <Instances index="78" Id="TTychus05_2">
             <Text index="0" Text="UserData/MissionObjective/TTychus05_2_Name"/>
             <Text index="1" removed="1"/>
         </Instances>
-        <Instances index="77" Id="TTychus05_3">
+        <Instances index="79" Id="TTychus05_3">
             <Int Int="1">
                 <Field Id="RewardProtossEach"/>
             </Int>
             <Text index="0" Text="UserData/MissionObjective/TTychus05_3_Name"/>
             <Text index="1" removed="1"/>
         </Instances>
-        <Instances index="78" Id="TZeratul01_1">
+        <Instances index="80" Id="TZeratul01_1">
             <Int index="0" removed="1"/>
             <Text index="0" Text="UserData/MissionObjective/TZeratul01_1_Name"/>
             <Text index="1" Text="UserData/MissionObjective/TZeratul01_1_FormatText"/>
         </Instances>
-        <Instances index="79" Id="TZeratul01_2">
+        <Instances index="81" Id="TZeratul01_2">
             <Text index="0" Text="UserData/MissionObjective/TZeratul01_2_Name"/>
             <Text index="1" Text="UserData/MissionObjective/TZeratul01_2_FormatText"/>
         </Instances>
-        <Instances index="80" Id="TZeratul01_3">
+        <Instances index="82" Id="TZeratul01_3">
             <Int Int="1">
                 <Field Id="RewardZergEach"/>
             </Int>
             <Text index="0" Text="UserData/MissionObjective/TZeratul01_3_Name"/>
             <Text index="1" Text="UserData/MissionObjective/TZeratul01_3_FormatText"/>
         </Instances>
-        <Instances index="81" Id="TZeratul01_4">
+        <Instances index="83" Id="TZeratul01_4">
+            <Int index="0" removed="1"/>
             <Text index="0" Text="UserData/MissionObjective/TZeratul01_4_Name"/>
             <Text index="1" Text="UserData/MissionObjective/TZeratul01_4_FormatText"/>
         </Instances>
-        <Instances index="82" Id="TZeratul02_1">
-            <Int index="0" removed="1"/>
+        <Instances index="84" Id="TZeratul02_1">
             <Text index="0" Text="UserData/MissionObjective/TZeratul02_1_Name"/>
             <Text index="1" Text="UserData/MissionObjective/TZeratul02_1_FormatText"/>
         </Instances>
-        <Instances index="83" Id="TZeratul02_2">
+        <Instances index="85" Id="TZeratul02_2">
             <Text index="0" Text="UserData/MissionObjective/TZeratul02_2_Name"/>
             <Text index="1" Text="UserData/MissionObjective/TZeratul02_2_FormatText"/>
         </Instances>
-        <Instances index="84" Id="TZeratul02_3">
+        <Instances index="86" Id="TZeratul02_3">
             <Int Int="1">
                 <Field Id="RewardProtossEach"/>
             </Int>
             <Text index="0" Text="UserData/MissionObjective/TZeratul02_3_Name"/>
             <Text index="1" Text="UserData/MissionObjective/TZeratul02_3_FormatText"/>
         </Instances>
-        <Instances index="85" Id="TZeratul03_1">
+        <Instances index="87" Id="TZeratul03_1">
             <Int index="0" removed="1"/>
             <Text index="0" Text="UserData/MissionObjective/TZeratul03_1_Name"/>
             <Text index="1" Text="UserData/MissionObjective/TZeratul03_1_FormatText"/>
+            <Text index="2" removed="1"/>
         </Instances>
-        <Instances index="86" Id="TZeratul03_2">
+        <Instances index="88" Id="TZeratul03_2">
             <Text index="0" Text="UserData/MissionObjective/TZeratul03_2_Name"/>
-            <Text index="1" Text="UserData/MissionObjective/TZeratul03_2_FormatText"/>
+            <Text Text="UserData/MissionObjective/TZeratul03_2_FormatText">
+                <Field Id="FormatText"/>
+            </Text>
         </Instances>
-        <Instances index="87" Id="TZeratul03_3">
+        <Instances index="89" Id="TZeratul03_3">
             <Int Int="1">
                 <Field Id="RewardProtossEach"/>
             </Int>
             <Text index="0" Text="UserData/MissionObjective/TZeratul03_3_Name"/>
-            <Text index="1" Text="UserData/MissionObjective/TZeratul03_3_FormatText"/>
+            <Text Text="UserData/MissionObjective/TZeratul03_3_FormatText">
+                <Field Id="FormatText"/>
+            </Text>
         </Instances>
-        <Instances index="88" Id="TZeratul03_4">
+        <Instances index="90" Id="TZeratul03_4">
             <Text index="0" Text="UserData/MissionObjective/TZeratul03_4_Name"/>
-            <Text index="1" Text="UserData/MissionObjective/TZeratul03_4_FormatText"/>
+            <Text Text="UserData/MissionObjective/TZeratul03_4_FormatText">
+                <Field Id="FormatText"/>
+            </Text>
         </Instances>
-        <Instances index="89" Id="TZeratul04_1">
-            <Int index="0" removed="1"/>
+        <Instances index="91" Id="TZeratul04_1">
             <Text index="0" Text="UserData/MissionObjective/TZeratul04_1_Name"/>
-            <Text index="1" Text="UserData/MissionObjective/TZeratul04_1_FormatText"/>
-            <Text index="2" removed="1"/>
+            <Text Text="UserData/MissionObjective/TZeratul04_1_FormatText">
+                <Field Id="FormatText"/>
+            </Text>
         </Instances>
-        <Instances index="90" Id="TZeratul04_2">
+        <Instances index="92" Id="TZeratul04_2">
             <Text index="0" Text="UserData/MissionObjective/TZeratul04_2_Name"/>
             <Text Text="UserData/MissionObjective/TZeratul04_2_FormatText">
                 <Field Id="FormatText"/>
             </Text>
         </Instances>
-        <Instances index="91" Id="TZeratul04_3">
+        <Instances index="93" Id="TZeratul04_3">
             <Int Int="3">
                 <Field Id="RewardProtossFinal"/>
             </Int>
@@ -673,20 +716,28 @@
                 <Field Id="FormatTextSingle"/>
             </Text>
         </Instances>
-        <Instances index="92" Id="TValerian01_1">
+        <Instances index="94" Id="TValerian01_1">
             <Text index="0" Text="UserData/MissionObjective/TValerian01_1_Name"/>
         </Instances>
-        <Instances index="93" Id="TValerian01_2">
-            <Text index="0" Text="UserData/MissionObjective/TValerian01_2_Name"/>
+        <Instances Id="TValerian01_2">
+            <Text Text="UserData/MissionObjective/TValerian01_2_Name">
+                <Field Id="Name"/>
+            </Text>
         </Instances>
-        <Instances index="94" Id="TValerian02A_1">
-            <Text index="0" Text="UserData/MissionObjective/TValerian02A_1_Name"/>
+        <Instances Id="TValerian02A_1">
+            <Text Text="UserData/MissionObjective/TValerian02A_1_Name">
+                <Field Id="Name"/>
+            </Text>
         </Instances>
-        <Instances index="95" Id="TValerian02A_2">
-            <Text index="0" Text="UserData/MissionObjective/TValerian02A_2_Name"/>
+        <Instances Id="TValerian02A_2">
+            <Text Text="UserData/MissionObjective/TValerian02A_2_Name">
+                <Field Id="Name"/>
+            </Text>
         </Instances>
-        <Instances index="96" Id="TValerian02B_1">
-            <Text index="0" Text="UserData/MissionObjective/TValerian02B_1_Name"/>
+        <Instances Id="TValerian02B_1">
+            <Text Text="UserData/MissionObjective/TValerian02B_1_Name">
+                <Field Id="Name"/>
+            </Text>
         </Instances>
         <Instances Id="TValerian02B_2">
             <Text Text="UserData/MissionObjective/TValerian02B_2_Name">
@@ -702,6 +753,205 @@
             <Int Int="10000">
                 <Field Id="RewardCreditsEach"/>
             </Int>
+        </Instances>
+        <Instances Id="[Override]TRaynor03_1">
+            <Int Int="1">
+                <Field Id="RewardZergEach"/>
+            </Int>
+        </Instances>
+        <Instances Id="[Override]TRaynor03_2">
+            <Text Text="UserData/MissionObjective/[Override]TRaynor03_2_FormatText">
+                <Field Id="FormatText"/>
+            </Text>
+        </Instances>
+        <Instances Id="[Override]THanson01_1">
+            <Text Text="UserData/MissionObjective/[Override]THanson01_1_FormatTextSingle">
+                <Field Id="FormatTextSingle"/>
+            </Text>
+            <Text Text="UserData/MissionObjective/[Override]THanson01_1_FormatText">
+                <Field Id="FormatText"/>
+            </Text>
+        </Instances>
+        <Instances Id="[Override]THanson01_2">
+            <Int Int="1">
+                <Field Id="RewardZergEach"/>
+            </Int>
+        </Instances>
+        <Instances Id="[Override]THanson03A_2">
+            <Text Text="UserData/MissionObjective/[Override]THanson03A_2_FormatText">
+                <Field Id="FormatText"/>
+            </Text>
+            <Text Text="UserData/MissionObjective/[Override]THanson03A_2_FormatTextSingle">
+                <Field Id="FormatTextSingle"/>
+            </Text>
+        </Instances>
+        <Instances Id="[Override]THanson03A_3">
+            <Text Text="UserData/MissionObjective/[Override]THanson03A_3_FormatText">
+                <Field Id="FormatText"/>
+            </Text>
+        </Instances>
+        <Instances Id="[Override]THanson03A_5">
+            <Int Int="3">
+                <Field Id="RewardZergFinal"/>
+            </Int>
+        </Instances>
+        <Instances Id="[Override]TTosh01_1">
+            <Text Text="UserData/MissionObjective/[Override]TTosh01_1_FormatText">
+                <Field Id="FormatText"/>
+            </Text>
+        </Instances>
+        <Instances Id="[Override]TTosh01_2">
+            <Int Int="1">
+                <Field Id="RewardProtossEach"/>
+            </Int>
+        </Instances>
+        <Instances Id="[Override]TTosh02_2">
+            <Int Int="25000">
+                <Field Id="RewardCreditsFinal"/>
+            </Int>
+        </Instances>
+        <Instances Id="[Override]TTosh03A_4">
+            <Int Int="5000">
+                <Field Id="RewardCreditsEach"/>
+            </Int>
+            <Text Text="UserData/MissionObjective/[Override]TTosh03A_4_FormatText">
+                <Field Id="FormatText"/>
+            </Text>
+            <Text Text="UserData/MissionObjective/[Override]TTosh03A_4_FormatTextSingle">
+                <Field Id="FormatTextSingle"/>
+            </Text>
+        </Instances>
+        <Instances Id="[Override]TTosh03B_4">
+            <Text Text="UserData/MissionObjective/[Override]TTosh03B_4_FormatText">
+                <Field Id="FormatText"/>
+            </Text>
+        </Instances>
+        <Instances Id="[Override]TTosh03B_5">
+            <Int Int="1">
+                <Field Id="RewardZergEach"/>
+            </Int>
+        </Instances>
+        <Instances Id="[Override]THorner01_3">
+            <Int Int="1">
+                <Field Id="RewardProtossEach"/>
+            </Int>
+            <Text Text="UserData/MissionObjective/[Override]THorner01_3_FormatText">
+                <Field Id="FormatText"/>
+            </Text>
+            <Text Text="UserData/MissionObjective/[Override]THorner01_3_"/>
+        </Instances>
+        <Instances Id="[Override]THorner03_1">
+            <Int Int="100000">
+                <Field Id="RewardCreditsFinal"/>
+            </Int>
+        </Instances>
+        <Instances Id="[Override]THorner03_2">
+            <Int Int="1">
+                <Field Id="RewardZergEach"/>
+            </Int>
+        </Instances>
+        <Instances Id="[Override]THorner03_4">
+            <Text Text="UserData/MissionObjective/[Override]THorner03_4_FormatText">
+                <Field Id="FormatText"/>
+            </Text>
+        </Instances>
+        <Instances Id="[Override]THorner03_5">
+            <Text Text="UserData/MissionObjective/[Override]THorner03_5_FormatText">
+                <Field Id="FormatText"/>
+            </Text>
+        </Instances>
+        <Instances Id="[Override]THorner04_2">
+            <Text Text="UserData/MissionObjective/[Override]THorner04_2_FormatText">
+                <Field Id="FormatText"/>
+            </Text>
+            <Text Text="UserData/MissionObjective/[Override]THorner04_2_"/>
+        </Instances>
+        <Instances Id="[Override]THorner05_1">
+            <Int Int="3">
+                <Field Id="RewardZergFinal"/>
+            </Int>
+        </Instances>
+        <Instances Id="[Override]THorner05_2">
+            <Int Int="1">
+                <Field Id="RewardProtossEach"/>
+            </Int>
+        </Instances>
+        <Instances Id="[Override]TTychus01_3">
+            <Int Int="1">
+                <Field Id="RewardProtossEach"/>
+            </Int>
+        </Instances>
+        <Instances Id="[Override]TTychus02_3">
+            <Int Int="3">
+                <Field Id="RewardZergFinal"/>
+            </Int>
+        </Instances>
+        <Instances Id="[Override]TTychus03_2">
+            <Int Int="1">
+                <Field Id="RewardProtossEach"/>
+            </Int>
+        </Instances>
+        <Instances Id="[Override]TTychus04_2">
+            <Int Int="1">
+                <Field Id="RewardProtossEach"/>
+            </Int>
+        </Instances>
+        <Instances Id="[Override]TTychus04_3">
+            <Text Text="UserData/MissionObjective/[Override]TTychus04_3_FormatText">
+                <Field Id="FormatText"/>
+            </Text>
+        </Instances>
+        <Instances Id="[Override]TTychus05_1">
+            <Text Text="UserData/MissionObjective/[Override]TTychus05_1_FormatText">
+                <Field Id="FormatText"/>
+            </Text>
+        </Instances>
+        <Instances Id="[Override]TTychus05_2">
+            <Int Int="1">
+                <Field Id="RewardZergEach"/>
+            </Int>
+        </Instances>
+        <Instances Id="[Override]TZeratul01_3">
+            <Int Int="1">
+                <Field Id="RewardProtossEach"/>
+            </Int>
+        </Instances>
+        <Instances Id="[Override]TZeratul02_2">
+            <Int Int="1">
+                <Field Id="RewardProtossEach"/>
+            </Int>
+        </Instances>
+        <Instances Id="[Override]TZeratul03_3">
+            <Int Int="3">
+                <Field Id="RewardProtossFinal"/>
+            </Int>
+            <Text Text="UserData/MissionObjective/[Override]TZeratul03_3_FormatTextSingle">
+                <Field Id="FormatTextSingle"/>
+            </Text>
+        </Instances>
+        <Instances Id="[Override]TZeratul03_4">
+            <Text Text="UserData/MissionObjective/[Override]TZeratul03_4_FormatText">
+                <Field Id="FormatText"/>
+            </Text>
+            <Text Text="UserData/MissionObjective/[Override]TZeratul03_4_"/>
+        </Instances>
+        <Instances Id="[Override]TZeratul04_1">
+            <Text Text="UserData/MissionObjective/[Override]TZeratul04_1_FormatText">
+                <Field Id="FormatText"/>
+            </Text>
+            <Text Text="UserData/MissionObjective/[Override]TZeratul04_1_"/>
+        </Instances>
+        <Instances Id="[Override]TValerian02A_2">
+            <Text Text="UserData/MissionObjective/[Override]TValerian02A_2_Name">
+                <Field Id="Name"/>
+            </Text>
+            <Text Text="UserData/MissionObjective/[Override]TValerian02A_2_"/>
+        </Instances>
+        <Instances Id="[Override]TValerian02B_1">
+            <Text Text="UserData/MissionObjective/[Override]TValerian02B_1_Name">
+                <Field Id="Name"/>
+            </Text>
+            <Text Text="UserData/MissionObjective/[Override]TValerian02B_1_"/>
         </Instances>
     </CUser>
 </Catalog>
