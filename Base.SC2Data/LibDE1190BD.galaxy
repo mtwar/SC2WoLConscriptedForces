@@ -1,17 +1,17 @@
 include "TriggerLibs/NativeLib"
 
-include "Lib376F6B3F_h"
+include "LibDE1190BD_h"
 
 //--------------------------------------------------------------------------------------------------
 // Library: Nightmare
 //--------------------------------------------------------------------------------------------------
 // External Library Initialization
-void lib376F6B3F_InitLibraries () {
+void libDE1190BD_InitLibraries () {
     libNtve_InitVariables();
 }
 
 // Functions
-void lib376F6B3F_gf_SendFlexibleAttackWave (string lp_unitType, int lp_seconds, int lp_maxAdd, int lp_player) {
+void libDE1190BD_gf_SendFlexibleAttackWave (string lp_unitType, int lp_seconds, int lp_maxAdd, int lp_player) {
     // Variable Declarations
     int lv_grace;
     int lv_plusorMinus90;
@@ -28,7 +28,7 @@ void lib376F6B3F_gf_SendFlexibleAttackWave (string lp_unitType, int lp_seconds, 
     Wait(lp_seconds, c_timeAI);
 }
 
-void lib376F6B3F_gf_SendFlexibleAttackWaveNoWait (string lp_unitType, int lp_seconds, int lp_maxAdd, int lp_player) {
+void libDE1190BD_gf_SendFlexibleAttackWaveNoWait (string lp_unitType, int lp_seconds, int lp_maxAdd, int lp_player) {
     // Variable Declarations
     int lv_plusorMinus90;
     int lv_extraUnits;
@@ -43,7 +43,7 @@ void lib376F6B3F_gf_SendFlexibleAttackWaveNoWait (string lp_unitType, int lp_sec
     AIAttackWaveSend(lp_player, (lp_seconds + lv_plusorMinus90), false);
 }
 
-void lib376F6B3F_gf_MakeBullies (int lp_amount, string lp_unit, region lp_region, int lp_player, int lp_rebuildCount) {
+void libDE1190BD_gf_MakeBullies (int lp_amount, string lp_unit, region lp_region, int lp_player, int lp_rebuildCount) {
     // Automatic Variable Declarations
     int auto7B517E27_n;
     int auto7B517E27_i;
@@ -55,7 +55,7 @@ void lib376F6B3F_gf_MakeBullies (int lp_amount, string lp_unit, region lp_region
     }
 }
 
-void lib376F6B3F_gf_TaldarimSkins (int lp_player) {
+void libDE1190BD_gf_TaldarimSkins (int lp_player) {
     // Automatic Variable Declarations
     // Implementation
     libNtve_gf_PlayerApplySkinReplacingExistingUnit(lp_player, "NexusForged", true);
@@ -88,7 +88,7 @@ void lib376F6B3F_gf_TaldarimSkins (int lp_player) {
     libNtve_gf_PlayerApplySkinReplacingExistingUnit(lp_player, "ZealotTaldarim", true);
 }
 
-void lib376F6B3F_gf_SingleTarget (unit lp_unit, abilcmd lp_ability, int lp_vitality, int lp_amount, int lp_range) {
+void libDE1190BD_gf_SingleTarget (unit lp_unit, abilcmd lp_ability, int lp_vitality, int lp_amount, int lp_range) {
     // Automatic Variable Declarations
     unitgroup auto26CE0903_g;
     int auto26CE0903_u;
@@ -108,7 +108,7 @@ void lib376F6B3F_gf_SingleTarget (unit lp_unit, abilcmd lp_ability, int lp_vital
     }
 }
 
-void lib376F6B3F_gf_PointAoE (unit lp_unit, abilcmd lp_ability, int lp_amount, int lp_range) {
+void libDE1190BD_gf_PointAoE (unit lp_unit, abilcmd lp_ability, int lp_amount, int lp_range) {
     // Automatic Variable Declarations
     unitgroup auto259FA10A_g;
     int auto259FA10A_u;
@@ -128,7 +128,7 @@ void lib376F6B3F_gf_PointAoE (unit lp_unit, abilcmd lp_ability, int lp_amount, i
     }
 }
 
-void lib376F6B3F_gf_PointAoEGroundOnly (unit lp_unit, abilcmd lp_ability, int lp_amount, int lp_range) {
+void libDE1190BD_gf_PointAoEGroundOnly (unit lp_unit, abilcmd lp_ability, int lp_amount, int lp_range) {
     // Automatic Variable Declarations
     unitgroup auto144AC15D_g;
     int auto144AC15D_u;
@@ -152,7 +152,7 @@ void lib376F6B3F_gf_PointAoEGroundOnly (unit lp_unit, abilcmd lp_ability, int lp
 //--------------------------------------------------------------------------------------------------
 // Trigger: Lower Than Brutal
 //--------------------------------------------------------------------------------------------------
-bool lib376F6B3F_gt_LowerThanBrutal_Func (bool testConds, bool runActions) {
+bool libDE1190BD_gt_LowerThanBrutal_Func (bool testConds, bool runActions) {
     // Automatic Variable Declarations
     // Conditions
     if (testConds) {
@@ -167,7 +167,7 @@ bool lib376F6B3F_gt_LowerThanBrutal_Func (bool testConds, bool runActions) {
     }
 
     if ((libNtve_gf_DifficultyValueInt(1, 1, 1, 0) == 1)) {
-        UIDisplayMessage(PlayerGroupAll(), c_messageAreaChat, StringExternal("Param/Value/lib_376F6B3F_363FDA0D"));
+        UIDisplayMessage(PlayerGroupAll(), c_messageAreaChat, StringExternal("Param/Value/lib_DE1190BD_363FDA0D"));
     }
 
     TriggerEnable(TriggerGetCurrent(), false);
@@ -175,15 +175,15 @@ bool lib376F6B3F_gt_LowerThanBrutal_Func (bool testConds, bool runActions) {
 }
 
 //--------------------------------------------------------------------------------------------------
-void lib376F6B3F_gt_LowerThanBrutal_Init () {
-    lib376F6B3F_gt_LowerThanBrutal = TriggerCreate("lib376F6B3F_gt_LowerThanBrutal_Func");
-    TriggerAddEventTimePeriodic(lib376F6B3F_gt_LowerThanBrutal, 5.0, c_timeGame);
+void libDE1190BD_gt_LowerThanBrutal_Init () {
+    libDE1190BD_gt_LowerThanBrutal = TriggerCreate("libDE1190BD_gt_LowerThanBrutal_Func");
+    TriggerAddEventTimePeriodic(libDE1190BD_gt_LowerThanBrutal, 5.0, c_timeGame);
 }
 
 //--------------------------------------------------------------------------------------------------
 // Trigger: Force Cheater
 //--------------------------------------------------------------------------------------------------
-bool lib376F6B3F_gt_ForceCheater_Func (bool testConds, bool runActions) {
+bool libDE1190BD_gt_ForceCheater_Func (bool testConds, bool runActions) {
     // Automatic Variable Declarations
     // Conditions
     if (testConds) {
@@ -204,109 +204,109 @@ bool lib376F6B3F_gt_ForceCheater_Func (bool testConds, bool runActions) {
 }
 
 //--------------------------------------------------------------------------------------------------
-void lib376F6B3F_gt_ForceCheater_Init () {
-    lib376F6B3F_gt_ForceCheater = TriggerCreate("lib376F6B3F_gt_ForceCheater_Func");
-    TriggerAddEventTimePeriodic(lib376F6B3F_gt_ForceCheater, 0.5, c_timeGame);
+void libDE1190BD_gt_ForceCheater_Init () {
+    libDE1190BD_gt_ForceCheater = TriggerCreate("libDE1190BD_gt_ForceCheater_Func");
+    TriggerAddEventTimePeriodic(libDE1190BD_gt_ForceCheater, 0.5, c_timeGame);
 }
 
 //--------------------------------------------------------------------------------------------------
 // Trigger: Run All Custom AI
 //--------------------------------------------------------------------------------------------------
-bool lib376F6B3F_gt_RunAllCustomAI_Func (bool testConds, bool runActions) {
+bool libDE1190BD_gt_RunAllCustomAI_Func (bool testConds, bool runActions) {
     // Automatic Variable Declarations
     // Actions
     if (!runActions) {
         return true;
     }
 
-    TriggerExecute(lib376F6B3F_gt_RunProtossAI, true, false);
-    TriggerExecute(lib376F6B3F_gt_RunTerranAI, true, false);
-    TriggerExecute(lib376F6B3F_gt_RunZergAI, true, false);
+    TriggerExecute(libDE1190BD_gt_RunProtossAI, true, false);
+    TriggerExecute(libDE1190BD_gt_RunTerranAI, true, false);
+    TriggerExecute(libDE1190BD_gt_RunZergAI, true, false);
     TechTreeUnitAllow(1, "MercCompound", true);
     TechTreeAbilityAllow(1, AbilityCommand("TerranBuild", 12), true);
     return true;
 }
 
 //--------------------------------------------------------------------------------------------------
-void lib376F6B3F_gt_RunAllCustomAI_Init () {
-    lib376F6B3F_gt_RunAllCustomAI = TriggerCreate("lib376F6B3F_gt_RunAllCustomAI_Func");
-    TriggerAddEventMapInit(lib376F6B3F_gt_RunAllCustomAI);
+void libDE1190BD_gt_RunAllCustomAI_Init () {
+    libDE1190BD_gt_RunAllCustomAI = TriggerCreate("libDE1190BD_gt_RunAllCustomAI_Func");
+    TriggerAddEventMapInit(libDE1190BD_gt_RunAllCustomAI);
 }
 
 //--------------------------------------------------------------------------------------------------
 // Trigger: Run Zerg AI
 //--------------------------------------------------------------------------------------------------
-bool lib376F6B3F_gt_RunZergAI_Func (bool testConds, bool runActions) {
+bool libDE1190BD_gt_RunZergAI_Func (bool testConds, bool runActions) {
     // Automatic Variable Declarations
     // Actions
     if (!runActions) {
         return true;
     }
 
-    TriggerExecute(lib376F6B3F_gt_Infestor, true, false);
-    TriggerExecute(lib376F6B3F_gt_BroodQueen, true, false);
-    TriggerExecute(lib376F6B3F_gt_LowerThanBrutal, true, false);
-    TriggerExecute(lib376F6B3F_gt_Brutalisk, true, false);
+    TriggerExecute(libDE1190BD_gt_Infestor, true, false);
+    TriggerExecute(libDE1190BD_gt_BroodQueen, true, false);
+    TriggerExecute(libDE1190BD_gt_LowerThanBrutal, true, false);
+    TriggerExecute(libDE1190BD_gt_Brutalisk, true, false);
     return true;
 }
 
 //--------------------------------------------------------------------------------------------------
-void lib376F6B3F_gt_RunZergAI_Init () {
-    lib376F6B3F_gt_RunZergAI = TriggerCreate("lib376F6B3F_gt_RunZergAI_Func");
+void libDE1190BD_gt_RunZergAI_Init () {
+    libDE1190BD_gt_RunZergAI = TriggerCreate("libDE1190BD_gt_RunZergAI_Func");
 }
 
 //--------------------------------------------------------------------------------------------------
 // Trigger: Run Terran AI
 //--------------------------------------------------------------------------------------------------
-bool lib376F6B3F_gt_RunTerranAI_Func (bool testConds, bool runActions) {
+bool libDE1190BD_gt_RunTerranAI_Func (bool testConds, bool runActions) {
     // Automatic Variable Declarations
     // Actions
     if (!runActions) {
         return true;
     }
 
-    TriggerExecute(lib376F6B3F_gt_Marine, true, false);
-    TriggerExecute(lib376F6B3F_gt_Ghost, true, false);
-    TriggerExecute(lib376F6B3F_gt_Reaper, true, false);
-    TriggerExecute(lib376F6B3F_gt_Raven, true, false);
-    TriggerExecute(lib376F6B3F_gt_Banshee, true, false);
-    TriggerExecute(lib376F6B3F_gt_Wraith, true, false);
-    TriggerExecute(lib376F6B3F_gt_LowerThanBrutal, true, false);
+    TriggerExecute(libDE1190BD_gt_Marine, true, false);
+    TriggerExecute(libDE1190BD_gt_Ghost, true, false);
+    TriggerExecute(libDE1190BD_gt_Reaper, true, false);
+    TriggerExecute(libDE1190BD_gt_Raven, true, false);
+    TriggerExecute(libDE1190BD_gt_Banshee, true, false);
+    TriggerExecute(libDE1190BD_gt_Wraith, true, false);
+    TriggerExecute(libDE1190BD_gt_LowerThanBrutal, true, false);
     return true;
 }
 
 //--------------------------------------------------------------------------------------------------
-void lib376F6B3F_gt_RunTerranAI_Init () {
-    lib376F6B3F_gt_RunTerranAI = TriggerCreate("lib376F6B3F_gt_RunTerranAI_Func");
+void libDE1190BD_gt_RunTerranAI_Init () {
+    libDE1190BD_gt_RunTerranAI = TriggerCreate("libDE1190BD_gt_RunTerranAI_Func");
 }
 
 //--------------------------------------------------------------------------------------------------
 // Trigger: Run Protoss AI
 //--------------------------------------------------------------------------------------------------
-bool lib376F6B3F_gt_RunProtossAI_Func (bool testConds, bool runActions) {
+bool libDE1190BD_gt_RunProtossAI_Func (bool testConds, bool runActions) {
     // Automatic Variable Declarations
     // Actions
     if (!runActions) {
         return true;
     }
 
-    TriggerExecute(lib376F6B3F_gt_HighTemplar, true, false);
-    TriggerExecute(lib376F6B3F_gt_Stalker, true, false);
-    TriggerExecute(lib376F6B3F_gt_Ascendent, true, false);
-    TriggerExecute(lib376F6B3F_gt_Wrathwalker, true, false);
-    TriggerExecute(lib376F6B3F_gt_LowerThanBrutal, true, false);
+    TriggerExecute(libDE1190BD_gt_HighTemplar, true, false);
+    TriggerExecute(libDE1190BD_gt_Stalker, true, false);
+    TriggerExecute(libDE1190BD_gt_Ascendent, true, false);
+    TriggerExecute(libDE1190BD_gt_Wrathwalker, true, false);
+    TriggerExecute(libDE1190BD_gt_LowerThanBrutal, true, false);
     return true;
 }
 
 //--------------------------------------------------------------------------------------------------
-void lib376F6B3F_gt_RunProtossAI_Init () {
-    lib376F6B3F_gt_RunProtossAI = TriggerCreate("lib376F6B3F_gt_RunProtossAI_Func");
+void libDE1190BD_gt_RunProtossAI_Init () {
+    libDE1190BD_gt_RunProtossAI = TriggerCreate("libDE1190BD_gt_RunProtossAI_Func");
 }
 
 //--------------------------------------------------------------------------------------------------
 // Trigger: Infestor
 //--------------------------------------------------------------------------------------------------
-bool lib376F6B3F_gt_Infestor_Func (bool testConds, bool runActions) {
+bool libDE1190BD_gt_Infestor_Func (bool testConds, bool runActions) {
     // Variable Declarations
     unit lv_localUnit;
 
@@ -330,7 +330,7 @@ bool lib376F6B3F_gt_Infestor_Func (bool testConds, bool runActions) {
             if (autoB2FB77C2_var == null) { break; }
             if ((UnitGetOwner(autoB2FB77C2_var) != 1)) {
                 if ((UnitGroupCount(UnitGroupAlliance(UnitGetOwner(autoB2FB77C2_var), c_unitAllianceEnemy, RegionCircle(UnitGetPosition(autoB2FB77C2_var), 10.0), UnitFilter(0, 0, (1 << c_targetFilterStructure) | (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0), c_unitCountAlive) > 4) && (UnitAbilityCheck(autoB2FB77C2_var, "FungalGrowth", true) == true)) {
-                    lib376F6B3F_gf_PointAoE(autoB2FB77C2_var, AbilityCommand("FungalGrowth", 0), 2, 8);
+                    libDE1190BD_gf_PointAoE(autoB2FB77C2_var, AbilityCommand("FungalGrowth", 0), 2, 8);
                 }
                 else {
                     if ((UnitGroupCount(UnitGroupAlliance(UnitGetOwner(autoB2FB77C2_var), c_unitAllianceEnemy, RegionCircle(UnitGetPosition(autoB2FB77C2_var), 10.0), UnitFilter(0, 0, (1 << c_targetFilterStructure) | (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0), c_unitCountAlive) > 1)) {
@@ -355,14 +355,14 @@ bool lib376F6B3F_gt_Infestor_Func (bool testConds, bool runActions) {
 }
 
 //--------------------------------------------------------------------------------------------------
-void lib376F6B3F_gt_Infestor_Init () {
-    lib376F6B3F_gt_Infestor = TriggerCreate("lib376F6B3F_gt_Infestor_Func");
+void libDE1190BD_gt_Infestor_Init () {
+    libDE1190BD_gt_Infestor = TriggerCreate("libDE1190BD_gt_Infestor_Func");
 }
 
 //--------------------------------------------------------------------------------------------------
 // Trigger: Brood Queen
 //--------------------------------------------------------------------------------------------------
-bool lib376F6B3F_gt_BroodQueen_Func (bool testConds, bool runActions) {
+bool libDE1190BD_gt_BroodQueen_Func (bool testConds, bool runActions) {
     // Variable Declarations
     unit lv_localUnit;
 
@@ -386,7 +386,7 @@ bool lib376F6B3F_gt_BroodQueen_Func (bool testConds, bool runActions) {
             if (autoC8212BFE_var == null) { break; }
             if ((UnitGetOwner(autoC8212BFE_var) != 1)) {
                 if ((UnitGroupCount(UnitGroupAlliance(UnitGetOwner(autoC8212BFE_var), c_unitAllianceEnemy, RegionCircle(UnitGetPosition(autoC8212BFE_var), 10.0), UnitFilter(0, 0, (1 << c_targetFilterStructure) | (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0), c_unitCountAlive) > 4)) {
-                    lib376F6B3F_gf_PointAoE(autoC8212BFE_var, AbilityCommand("QueenMPEnsnare", 0), 2, 8);
+                    libDE1190BD_gf_PointAoE(autoC8212BFE_var, AbilityCommand("QueenMPEnsnare", 0), 2, 8);
                 }
 
                 if ((UnitGroupCount(UnitGroupAlliance(UnitGetOwner(autoC8212BFE_var), c_unitAllianceEnemy, RegionCircle(UnitGetPosition(autoC8212BFE_var), 10.0), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0), c_unitCountAlive) > 1)) {
@@ -406,14 +406,14 @@ bool lib376F6B3F_gt_BroodQueen_Func (bool testConds, bool runActions) {
 }
 
 //--------------------------------------------------------------------------------------------------
-void lib376F6B3F_gt_BroodQueen_Init () {
-    lib376F6B3F_gt_BroodQueen = TriggerCreate("lib376F6B3F_gt_BroodQueen_Func");
+void libDE1190BD_gt_BroodQueen_Init () {
+    libDE1190BD_gt_BroodQueen = TriggerCreate("libDE1190BD_gt_BroodQueen_Func");
 }
 
 //--------------------------------------------------------------------------------------------------
 // Trigger: Brutalisk
 //--------------------------------------------------------------------------------------------------
-bool lib376F6B3F_gt_Brutalisk_Func (bool testConds, bool runActions) {
+bool libDE1190BD_gt_Brutalisk_Func (bool testConds, bool runActions) {
     // Automatic Variable Declarations
     unitgroup auto63D0E72A_g;
     int auto63D0E72A_u;
@@ -441,14 +441,14 @@ bool lib376F6B3F_gt_Brutalisk_Func (bool testConds, bool runActions) {
 }
 
 //--------------------------------------------------------------------------------------------------
-void lib376F6B3F_gt_Brutalisk_Init () {
-    lib376F6B3F_gt_Brutalisk = TriggerCreate("lib376F6B3F_gt_Brutalisk_Func");
+void libDE1190BD_gt_Brutalisk_Init () {
+    libDE1190BD_gt_Brutalisk = TriggerCreate("libDE1190BD_gt_Brutalisk_Func");
 }
 
 //--------------------------------------------------------------------------------------------------
 // Trigger: Marine
 //--------------------------------------------------------------------------------------------------
-bool lib376F6B3F_gt_Marine_Func (bool testConds, bool runActions) {
+bool libDE1190BD_gt_Marine_Func (bool testConds, bool runActions) {
     // Automatic Variable Declarations
     unitgroup auto542D7236_g;
     int auto542D7236_u;
@@ -497,14 +497,14 @@ bool lib376F6B3F_gt_Marine_Func (bool testConds, bool runActions) {
 }
 
 //--------------------------------------------------------------------------------------------------
-void lib376F6B3F_gt_Marine_Init () {
-    lib376F6B3F_gt_Marine = TriggerCreate("lib376F6B3F_gt_Marine_Func");
+void libDE1190BD_gt_Marine_Init () {
+    libDE1190BD_gt_Marine = TriggerCreate("libDE1190BD_gt_Marine_Func");
 }
 
 //--------------------------------------------------------------------------------------------------
 // Trigger: Reaper
 //--------------------------------------------------------------------------------------------------
-bool lib376F6B3F_gt_Reaper_Func (bool testConds, bool runActions) {
+bool libDE1190BD_gt_Reaper_Func (bool testConds, bool runActions) {
     // Variable Declarations
     unit lv_localUnit;
 
@@ -527,7 +527,7 @@ bool lib376F6B3F_gt_Reaper_Func (bool testConds, bool runActions) {
             auto0458E0FE_var = UnitGroupUnitFromEnd(auto0458E0FE_g, auto0458E0FE_u);
             if (auto0458E0FE_var == null) { break; }
             if ((UnitGetOwner(auto0458E0FE_var) != 1)) {
-                lib376F6B3F_gf_PointAoEGroundOnly(auto0458E0FE_var, AbilityCommand("D8Charge", 0), 4, 6);
+                libDE1190BD_gf_PointAoEGroundOnly(auto0458E0FE_var, AbilityCommand("D8Charge", 0), 4, 6);
             }
 
         }
@@ -537,14 +537,14 @@ bool lib376F6B3F_gt_Reaper_Func (bool testConds, bool runActions) {
 }
 
 //--------------------------------------------------------------------------------------------------
-void lib376F6B3F_gt_Reaper_Init () {
-    lib376F6B3F_gt_Reaper = TriggerCreate("lib376F6B3F_gt_Reaper_Func");
+void libDE1190BD_gt_Reaper_Init () {
+    libDE1190BD_gt_Reaper = TriggerCreate("libDE1190BD_gt_Reaper_Func");
 }
 
 //--------------------------------------------------------------------------------------------------
 // Trigger: Ghost
 //--------------------------------------------------------------------------------------------------
-bool lib376F6B3F_gt_Ghost_Func (bool testConds, bool runActions) {
+bool libDE1190BD_gt_Ghost_Func (bool testConds, bool runActions) {
     // Variable Declarations
     unit lv_localUnit;
 
@@ -567,7 +567,7 @@ bool lib376F6B3F_gt_Ghost_Func (bool testConds, bool runActions) {
             autoAE8689A2_var = UnitGroupUnitFromEnd(autoAE8689A2_g, autoAE8689A2_u);
             if (autoAE8689A2_var == null) { break; }
             if ((UnitGetOwner(autoAE8689A2_var) != 1)) {
-                lib376F6B3F_gf_SingleTarget(autoAE8689A2_var, AbilityCommand("Snipe", 0), c_unitPropLife, 100, 8);
+                libDE1190BD_gf_SingleTarget(autoAE8689A2_var, AbilityCommand("Snipe", 0), c_unitPropLife, 100, 8);
                 if ((UnitGroupCount(UnitGroupAlliance(UnitGetOwner(autoAE8689A2_var), c_unitAllianceEnemy, RegionCircle(UnitGetPosition(autoAE8689A2_var), 10.0), UnitFilter((1 << c_targetFilterStructure), 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0), c_unitCountAlive) > 4)) {
                     AISetUnitScriptControlled(UnitLastCreated(), true);
                     UnitIssueOrder(autoAE8689A2_var, Order(AbilityCommand("GhostCloak", 0)), c_orderQueueReplace);
@@ -589,14 +589,14 @@ bool lib376F6B3F_gt_Ghost_Func (bool testConds, bool runActions) {
 }
 
 //--------------------------------------------------------------------------------------------------
-void lib376F6B3F_gt_Ghost_Init () {
-    lib376F6B3F_gt_Ghost = TriggerCreate("lib376F6B3F_gt_Ghost_Func");
+void libDE1190BD_gt_Ghost_Init () {
+    libDE1190BD_gt_Ghost = TriggerCreate("libDE1190BD_gt_Ghost_Func");
 }
 
 //--------------------------------------------------------------------------------------------------
 // Trigger: Banshee
 //--------------------------------------------------------------------------------------------------
-bool lib376F6B3F_gt_Banshee_Func (bool testConds, bool runActions) {
+bool libDE1190BD_gt_Banshee_Func (bool testConds, bool runActions) {
     // Variable Declarations
     unit lv_localUnit;
 
@@ -660,14 +660,14 @@ bool lib376F6B3F_gt_Banshee_Func (bool testConds, bool runActions) {
 }
 
 //--------------------------------------------------------------------------------------------------
-void lib376F6B3F_gt_Banshee_Init () {
-    lib376F6B3F_gt_Banshee = TriggerCreate("lib376F6B3F_gt_Banshee_Func");
+void libDE1190BD_gt_Banshee_Init () {
+    libDE1190BD_gt_Banshee = TriggerCreate("libDE1190BD_gt_Banshee_Func");
 }
 
 //--------------------------------------------------------------------------------------------------
 // Trigger: Wraith
 //--------------------------------------------------------------------------------------------------
-bool lib376F6B3F_gt_Wraith_Func (bool testConds, bool runActions) {
+bool libDE1190BD_gt_Wraith_Func (bool testConds, bool runActions) {
     // Variable Declarations
     unit lv_localUnit;
 
@@ -709,14 +709,14 @@ bool lib376F6B3F_gt_Wraith_Func (bool testConds, bool runActions) {
 }
 
 //--------------------------------------------------------------------------------------------------
-void lib376F6B3F_gt_Wraith_Init () {
-    lib376F6B3F_gt_Wraith = TriggerCreate("lib376F6B3F_gt_Wraith_Func");
+void libDE1190BD_gt_Wraith_Init () {
+    libDE1190BD_gt_Wraith = TriggerCreate("libDE1190BD_gt_Wraith_Func");
 }
 
 //--------------------------------------------------------------------------------------------------
 // Trigger: Raven
 //--------------------------------------------------------------------------------------------------
-bool lib376F6B3F_gt_Raven_Func (bool testConds, bool runActions) {
+bool libDE1190BD_gt_Raven_Func (bool testConds, bool runActions) {
     // Variable Declarations
     unit lv_localUnit;
 
@@ -739,7 +739,7 @@ bool lib376F6B3F_gt_Raven_Func (bool testConds, bool runActions) {
             auto641B5307_var = UnitGroupUnitFromEnd(auto641B5307_g, auto641B5307_u);
             if (auto641B5307_var == null) { break; }
             if ((UnitGetOwner(auto641B5307_var) != 1) && (UnitGroupCount(UnitGroupAlliance(UnitGetOwner(auto641B5307_var), c_unitAllianceEnemy, RegionCircle(UnitGetPosition(auto641B5307_var), 8.0), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0), c_unitCountAlive) > 0)) {
-                lib376F6B3F_gf_SingleTarget(auto641B5307_var, AbilityCommand("SeekerMissile", 0), c_unitPropLife, 45, 8);
+                libDE1190BD_gf_SingleTarget(auto641B5307_var, AbilityCommand("SeekerMissile", 0), c_unitPropLife, 45, 8);
                 UnitIssueOrder(auto641B5307_var, OrderTargetingPoint(AbilityCommand("BuildAutoTurret", 0), libNtve_gf_PointOffsetTowardsPoint(UnitGetPosition(auto641B5307_var), 1.5, UnitGetPosition(UnitGroupRandomUnit(UnitGroupAlliance(UnitGetOwner(auto641B5307_var), c_unitAllianceEnemy, RegionCircle(UnitGetPosition(auto641B5307_var), 8.0), UnitFilter(0, 0, (1 << c_targetFilterMissile), (1 << (c_targetFilterDead - 32)) | (1 << (c_targetFilterHidden - 32))), 0), c_unitCountAlive)))), c_orderQueueAddToFront);
             }
 
@@ -750,14 +750,14 @@ bool lib376F6B3F_gt_Raven_Func (bool testConds, bool runActions) {
 }
 
 //--------------------------------------------------------------------------------------------------
-void lib376F6B3F_gt_Raven_Init () {
-    lib376F6B3F_gt_Raven = TriggerCreate("lib376F6B3F_gt_Raven_Func");
+void libDE1190BD_gt_Raven_Init () {
+    libDE1190BD_gt_Raven = TriggerCreate("libDE1190BD_gt_Raven_Func");
 }
 
 //--------------------------------------------------------------------------------------------------
 // Trigger: Stalker
 //--------------------------------------------------------------------------------------------------
-bool lib376F6B3F_gt_Stalker_Func (bool testConds, bool runActions) {
+bool libDE1190BD_gt_Stalker_Func (bool testConds, bool runActions) {
     // Automatic Variable Declarations
     unitgroup autoDE64730A_g;
     int autoDE64730A_u;
@@ -798,14 +798,14 @@ bool lib376F6B3F_gt_Stalker_Func (bool testConds, bool runActions) {
 }
 
 //--------------------------------------------------------------------------------------------------
-void lib376F6B3F_gt_Stalker_Init () {
-    lib376F6B3F_gt_Stalker = TriggerCreate("lib376F6B3F_gt_Stalker_Func");
+void libDE1190BD_gt_Stalker_Init () {
+    libDE1190BD_gt_Stalker = TriggerCreate("libDE1190BD_gt_Stalker_Func");
 }
 
 //--------------------------------------------------------------------------------------------------
 // Trigger: High Templar
 //--------------------------------------------------------------------------------------------------
-bool lib376F6B3F_gt_HighTemplar_Func (bool testConds, bool runActions) {
+bool libDE1190BD_gt_HighTemplar_Func (bool testConds, bool runActions) {
     // Variable Declarations
     unit lv_localUnit;
 
@@ -828,8 +828,8 @@ bool lib376F6B3F_gt_HighTemplar_Func (bool testConds, bool runActions) {
             auto2C20FF85_var = UnitGroupUnitFromEnd(auto2C20FF85_g, auto2C20FF85_u);
             if (auto2C20FF85_var == null) { break; }
             if ((UnitGetOwner(auto2C20FF85_var) != 1)) {
-                lib376F6B3F_gf_PointAoE(auto2C20FF85_var, AbilityCommand("PsiStorm", 0), 3, 10);
-                lib376F6B3F_gf_SingleTarget(auto2C20FF85_var, AbilityCommand("Feedback", 0), c_unitPropEnergy, 72, 7);
+                libDE1190BD_gf_PointAoE(auto2C20FF85_var, AbilityCommand("PsiStorm", 0), 3, 10);
+                libDE1190BD_gf_SingleTarget(auto2C20FF85_var, AbilityCommand("Feedback", 0), c_unitPropEnergy, 72, 7);
             }
 
         }
@@ -839,14 +839,14 @@ bool lib376F6B3F_gt_HighTemplar_Func (bool testConds, bool runActions) {
 }
 
 //--------------------------------------------------------------------------------------------------
-void lib376F6B3F_gt_HighTemplar_Init () {
-    lib376F6B3F_gt_HighTemplar = TriggerCreate("lib376F6B3F_gt_HighTemplar_Func");
+void libDE1190BD_gt_HighTemplar_Init () {
+    libDE1190BD_gt_HighTemplar = TriggerCreate("libDE1190BD_gt_HighTemplar_Func");
 }
 
 //--------------------------------------------------------------------------------------------------
 // Trigger: Ascendent
 //--------------------------------------------------------------------------------------------------
-bool lib376F6B3F_gt_Ascendent_Func (bool testConds, bool runActions) {
+bool libDE1190BD_gt_Ascendent_Func (bool testConds, bool runActions) {
     // Automatic Variable Declarations
     unitgroup auto8B14683E_g;
     int auto8B14683E_u;
@@ -864,8 +864,8 @@ bool lib376F6B3F_gt_Ascendent_Func (bool testConds, bool runActions) {
             auto8B14683E_var = UnitGroupUnitFromEnd(auto8B14683E_g, auto8B14683E_u);
             if (auto8B14683E_var == null) { break; }
             if ((UnitGetOwner(auto8B14683E_var) != 1)) {
-                lib376F6B3F_gf_PointAoE(auto8B14683E_var, AbilityCommand("VoidHighTemplarPsiOrb", 0), 5, 8);
-                lib376F6B3F_gf_SingleTarget(auto8B14683E_var, AbilityCommand("VoidHighTemplarMindBlast", 0), c_unitPropLife, 135, 9);
+                libDE1190BD_gf_PointAoE(auto8B14683E_var, AbilityCommand("VoidHighTemplarPsiOrb", 0), 5, 8);
+                libDE1190BD_gf_SingleTarget(auto8B14683E_var, AbilityCommand("VoidHighTemplarMindBlast", 0), c_unitPropLife, 135, 9);
             }
 
         }
@@ -875,14 +875,14 @@ bool lib376F6B3F_gt_Ascendent_Func (bool testConds, bool runActions) {
 }
 
 //--------------------------------------------------------------------------------------------------
-void lib376F6B3F_gt_Ascendent_Init () {
-    lib376F6B3F_gt_Ascendent = TriggerCreate("lib376F6B3F_gt_Ascendent_Func");
+void libDE1190BD_gt_Ascendent_Init () {
+    libDE1190BD_gt_Ascendent = TriggerCreate("libDE1190BD_gt_Ascendent_Func");
 }
 
 //--------------------------------------------------------------------------------------------------
 // Trigger: Wrathwalker
 //--------------------------------------------------------------------------------------------------
-bool lib376F6B3F_gt_Wrathwalker_Func (bool testConds, bool runActions) {
+bool libDE1190BD_gt_Wrathwalker_Func (bool testConds, bool runActions) {
     // Automatic Variable Declarations
     unitgroup autoC00DD224_g;
     int autoC00DD224_u;
@@ -911,45 +911,45 @@ bool lib376F6B3F_gt_Wrathwalker_Func (bool testConds, bool runActions) {
 }
 
 //--------------------------------------------------------------------------------------------------
-void lib376F6B3F_gt_Wrathwalker_Init () {
-    lib376F6B3F_gt_Wrathwalker = TriggerCreate("lib376F6B3F_gt_Wrathwalker_Func");
+void libDE1190BD_gt_Wrathwalker_Init () {
+    libDE1190BD_gt_Wrathwalker = TriggerCreate("libDE1190BD_gt_Wrathwalker_Func");
 }
 
-void lib376F6B3F_InitTriggers () {
-    lib376F6B3F_gt_LowerThanBrutal_Init();
-    lib376F6B3F_gt_ForceCheater_Init();
-    lib376F6B3F_gt_RunAllCustomAI_Init();
-    lib376F6B3F_gt_RunZergAI_Init();
-    lib376F6B3F_gt_RunTerranAI_Init();
-    lib376F6B3F_gt_RunProtossAI_Init();
-    lib376F6B3F_gt_Infestor_Init();
-    lib376F6B3F_gt_BroodQueen_Init();
-    lib376F6B3F_gt_Brutalisk_Init();
-    lib376F6B3F_gt_Marine_Init();
-    lib376F6B3F_gt_Reaper_Init();
-    lib376F6B3F_gt_Ghost_Init();
-    lib376F6B3F_gt_Banshee_Init();
-    lib376F6B3F_gt_Wraith_Init();
-    lib376F6B3F_gt_Raven_Init();
-    lib376F6B3F_gt_Stalker_Init();
-    lib376F6B3F_gt_HighTemplar_Init();
-    lib376F6B3F_gt_Ascendent_Init();
-    lib376F6B3F_gt_Wrathwalker_Init();
+void libDE1190BD_InitTriggers () {
+    libDE1190BD_gt_LowerThanBrutal_Init();
+    libDE1190BD_gt_ForceCheater_Init();
+    libDE1190BD_gt_RunAllCustomAI_Init();
+    libDE1190BD_gt_RunZergAI_Init();
+    libDE1190BD_gt_RunTerranAI_Init();
+    libDE1190BD_gt_RunProtossAI_Init();
+    libDE1190BD_gt_Infestor_Init();
+    libDE1190BD_gt_BroodQueen_Init();
+    libDE1190BD_gt_Brutalisk_Init();
+    libDE1190BD_gt_Marine_Init();
+    libDE1190BD_gt_Reaper_Init();
+    libDE1190BD_gt_Ghost_Init();
+    libDE1190BD_gt_Banshee_Init();
+    libDE1190BD_gt_Wraith_Init();
+    libDE1190BD_gt_Raven_Init();
+    libDE1190BD_gt_Stalker_Init();
+    libDE1190BD_gt_HighTemplar_Init();
+    libDE1190BD_gt_Ascendent_Init();
+    libDE1190BD_gt_Wrathwalker_Init();
 }
 
 //--------------------------------------------------------------------------------------------------
 // Library Initialization
 //--------------------------------------------------------------------------------------------------
-bool lib376F6B3F_InitLib_completed = false;
+bool libDE1190BD_InitLib_completed = false;
 
-void lib376F6B3F_InitLib () {
-    if (lib376F6B3F_InitLib_completed) {
+void libDE1190BD_InitLib () {
+    if (libDE1190BD_InitLib_completed) {
         return;
     }
 
-    lib376F6B3F_InitLib_completed = true;
+    libDE1190BD_InitLib_completed = true;
 
-    lib376F6B3F_InitLibraries();
-    lib376F6B3F_InitTriggers();
+    libDE1190BD_InitLibraries();
+    libDE1190BD_InitTriggers();
 }
 
