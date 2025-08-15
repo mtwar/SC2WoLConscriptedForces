@@ -72,7 +72,7 @@
             </Int>
         </Instances>
         <Instances index="8">
-            <Int index="1" Int="25000">
+            <Int Int="25000">
                 <Field Id="Price"/>
             </Int>
             <Int Int="3">
@@ -109,10 +109,7 @@
             </Int>
         </Instances>
         <Instances index="12">
-            <Int index="0">
-                <Field Id="UnlockWithConscription"/>
-            </Int>
-            <Int index="1" Int="60000">
+            <Int Int="60000">
                 <Field Id="Price"/>
             </Int>
             <Int Int="5">
@@ -128,7 +125,7 @@
             </Int>
         </Instances>
         <Instances index="14">
-            <Int index="1" Int="60000">
+            <Int Int="60000">
                 <Field Id="Price"/>
             </Int>
             <Int Int="6">
@@ -172,7 +169,7 @@
         </Instances>
         <Instances index="19">
             <GameLink index="0" removed="1"/>
-            <Int index="1" Int="75000">
+            <Int Int="75000">
                 <Field Id="Price"/>
             </Int>
             <Int Int="8">
@@ -204,7 +201,7 @@
             <GameLink GameLink="THorner05S">
                 <Field Id="UnlockMap"/>
             </GameLink>
-            <Int index="1" Int="9">
+            <Int Int="9">
                 <Field Id="UnlockMissionNumber"/>
             </Int>
         </Instances>
@@ -242,9 +239,6 @@
             <Int Int="2">
                 <Field Id="UnlockMissionNumber"/>
             </Int>
-        </Instances>
-        <Instances index="28">
-            <Int index="1" removed="1"/>
         </Instances>
         <Instances index="29">
             <Int Int="2">
@@ -749,6 +743,11 @@
                 <Field Id="Name"/>
             </Text>
         </Instances>
+        <Instances Id="[Override]TRaynor01_3">
+            <Int Int="2500">
+                <Field Id="RewardCreditsEach"/>
+            </Int>
+        </Instances>
         <Instances Id="[Override]TRaynor02_2">
             <Int Int="10000">
                 <Field Id="RewardCreditsEach"/>
@@ -795,11 +794,6 @@
                 <Field Id="RewardZergFinal"/>
             </Int>
         </Instances>
-        <Instances Id="[Override]TTosh01_1">
-            <Text Text="UserData/MissionObjective/[Override]TTosh01_1_FormatText">
-                <Field Id="FormatText"/>
-            </Text>
-        </Instances>
         <Instances Id="[Override]TTosh01_2">
             <Int Int="1">
                 <Field Id="RewardProtossEach"/>
@@ -821,11 +815,6 @@
                 <Field Id="FormatTextSingle"/>
             </Text>
         </Instances>
-        <Instances Id="[Override]TTosh03B_4">
-            <Text Text="UserData/MissionObjective/[Override]TTosh03B_4_FormatText">
-                <Field Id="FormatText"/>
-            </Text>
-        </Instances>
         <Instances Id="[Override]TTosh03B_5">
             <Int Int="1">
                 <Field Id="RewardZergEach"/>
@@ -835,9 +824,6 @@
             <Int Int="1">
                 <Field Id="RewardProtossEach"/>
             </Int>
-            <Text Text="UserData/MissionObjective/[Override]THorner01_3_FormatText">
-                <Field Id="FormatText"/>
-            </Text>
             <Text Text="UserData/MissionObjective/[Override]THorner01_3_"/>
         </Instances>
         <Instances Id="[Override]THorner03_1">
@@ -861,9 +847,6 @@
             </Text>
         </Instances>
         <Instances Id="[Override]THorner04_2">
-            <Text Text="UserData/MissionObjective/[Override]THorner04_2_FormatText">
-                <Field Id="FormatText"/>
-            </Text>
             <Text Text="UserData/MissionObjective/[Override]THorner04_2_"/>
         </Instances>
         <Instances Id="[Override]THorner05_1">
@@ -930,27 +913,15 @@
             </Text>
         </Instances>
         <Instances Id="[Override]TZeratul03_4">
-            <Text Text="UserData/MissionObjective/[Override]TZeratul03_4_FormatText">
-                <Field Id="FormatText"/>
-            </Text>
             <Text Text="UserData/MissionObjective/[Override]TZeratul03_4_"/>
         </Instances>
         <Instances Id="[Override]TZeratul04_1">
-            <Text Text="UserData/MissionObjective/[Override]TZeratul04_1_FormatText">
-                <Field Id="FormatText"/>
-            </Text>
             <Text Text="UserData/MissionObjective/[Override]TZeratul04_1_"/>
         </Instances>
         <Instances Id="[Override]TValerian02A_2">
-            <Text Text="UserData/MissionObjective/[Override]TValerian02A_2_Name">
-                <Field Id="Name"/>
-            </Text>
             <Text Text="UserData/MissionObjective/[Override]TValerian02A_2_"/>
         </Instances>
         <Instances Id="[Override]TValerian02B_1">
-            <Text Text="UserData/MissionObjective/[Override]TValerian02B_1_Name">
-                <Field Id="Name"/>
-            </Text>
             <Text Text="UserData/MissionObjective/[Override]TValerian02B_1_"/>
         </Instances>
     </CUser>
