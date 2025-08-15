@@ -6,10 +6,14 @@
     <CObjective id="TRaynor01_5">
         <Type value="Optional"/>
     </CObjective>
+    <CObjective id="TRaynor02_2">
+        <RequiredCount value="1"/>
+    </CObjective>
     <CObjective id="TRaynor02_3">
         <Type value="Optional"/>
     </CObjective>
     <CObjective id="TRaynor02_4">
         <Type value="Optional"/>
+        <RequiredCount value="1"/>
     </CObjective>
 </Catalog>

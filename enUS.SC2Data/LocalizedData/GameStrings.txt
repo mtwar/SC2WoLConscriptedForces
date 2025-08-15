@@ -1,6 +1,6 @@
 ﻿ConversationState/MissionObjective/TRaynor01_4=Find the Dominion excavation site
 ConversationState/MissionObjective/TRaynor01_5=Keep all forces alive
-ConversationState/MissionObjective/TRaynor02_3=Explore the abandoned dig site Copy
+ConversationState/MissionObjective/TRaynor02_3=Explore the abandoned dig site
 ConversationState/MissionObjective/TRaynor02_4=Destroy the Dominion starport
 DocInfo/DescShort=Any
 DocInfo/Name=Just Another StarCraft II Mod
