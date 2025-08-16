@@ -1,4 +1,6 @@
-﻿ConversationState/MissionObjective/TRaynor01_4=Find the Dominion excavation site
+﻿Button/Name/BuildRaynor=Build Raynor
+Button/Tooltip/BuildRaynor=Jim's a man of the people
+ConversationState/MissionObjective/TRaynor01_4=Find the Dominion excavation site
 ConversationState/MissionObjective/TRaynor01_5=Keep all forces alive
 ConversationState/MissionObjective/TRaynor02_3=Explore the abandoned dig site
 ConversationState/MissionObjective/TRaynor02_4=Destroy the Dominion starport
@@ -9,7 +11,6 @@ Objective/Description/TRaynor01_4=The Dominion have been excavating Protoss reli
 Objective/Description/TRaynor01_5=Your heroism will be rewarded
 Objective/Description/TRaynor02_3=There's an old Kel-Morian dig site in the area, maybe they left something behind...
 Objective/Description/TRaynor02_4=The Dominion's been using a nearby starport to disrupt competing ming operations. The Kel-Morians will pay handsomely if we destroy it.
-Param/Value/lib_DE1190BD_363FDA0D=<c val="00FF00">Nightmare Difficulty:</c> <c val="FF0000">Detected difficulty lower than Nightmare. Expect drastic difficulty spikes.</c>
 UserData/MissionObjective/TRaynor01_4_Name=Find the Dominion excavation site
 UserData/MissionObjective/TRaynor02_3_Name=Explore the abandoned dig site
 UserData/MissionObjective/TRaynor02_4_Name=Destroy the Dominion starport

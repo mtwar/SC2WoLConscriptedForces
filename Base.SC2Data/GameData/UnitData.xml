@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CUnit id="Barracks">
+        <CardLayouts index="0">
+            <LayoutButtons Face="BuildRaynor" Type="AbilCmd" AbilCmd="BarracksTrain,Train8" Row="0" Column="4"/>
+        </CardLayouts>
+        <TechTreeProducedUnitArray index="0" value="Raynor01"/>
+    </CUnit>
+    <CUnit id="Raynor01">
+        <CostResource index="Minerals" value="200"/>
+    </CUnit>
+</Catalog>

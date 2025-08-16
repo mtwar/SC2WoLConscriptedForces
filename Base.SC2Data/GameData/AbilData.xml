@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <!-- Terran Train Abilities Fix -->
+    <CAbilTrain id="BarracksTrain">
+        <InfoArray index="Train8">
+            <Charge CountMax="1" CountStart="1" CountUse="1"/>
+            <Button DefaultButtonFace="BuildRaynor" Requirements="HaveBarracks"/>
+            <Unit value="Raynor01"/>
+        </InfoArray>
+    </CAbilTrain>
+</Catalog>

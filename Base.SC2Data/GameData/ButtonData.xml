@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CButton id="BuildRaynor">
+        <Icon value="Assets\Textures\btn-commander-raynor.dds"/>
+        <AlertIcon value="Assets\Textures\btn-commander-raynor.dds"/>
+        <EditorCategories value="Race:Terran"/>
+    </CButton>
+</Catalog>

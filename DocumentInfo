@@ -2,5 +2,6 @@
 <DocInfo>
     <Dependencies>
         <Value>file:Mods\WoLKitPlusConscription.SC2Mod</Value>
+        <Value>file:Mods\NightmareAI.SC2Mod</Value>
     </Dependencies>
 </DocInfo>
