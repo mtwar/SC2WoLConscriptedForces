@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CSound id="TRaynor02Raynor000691" parent="Campaign">
+        <AssetArray index="0">
+            <File value="Assets\Chopped Voice Lines\TRaynor02Raynor00069.ogg"/>
+            <FacialAnim value=""/>
+            <FacialGroup value=""/>
+            <PortraitModel value=""/>
+            <Speaker value=""/>
+            <Subtitle value=""/>
+        </AssetArray>
+        <Category value="Voice"/>
+    </CSound>
+    <CSound id="TRaynor02Swann000681" parent="Campaign">
+        <AssetArray index="0">
+            <File value="Assets\Chopped Voice Lines\Swann Dominion Are Making Wraith Fighters Now.ogg"/>
+            <FacialAnim value=""/>
+            <FacialGroup value=""/>
+            <PortraitModel value=""/>
+            <Speaker value=""/>
+            <Subtitle value=""/>
+        </AssetArray>
+        <Category value="Voice"/>
+    </CSound>
+    <CSound id="TRaynor02_Raynor_071" parent="Campaign" Portrait="RaynorCommanderPortrait" Subtitle="TRaynor02" Speaker="CharRaynor" Actor="" Line="00071">
+        <AssetArray index="0">
+            <File value="LocalizedData\Sounds\VO\TRaynor02_Raynor_071.ogg"/>
+            <FacialAnim value="TRaynor02_Raynor_071"/>
+            <FacialGroup value="TRaynor02_Raynor_071"/>
+            <FacialFile value="LocalizedData\Sounds\VO\TRaynor02_Raynor_071.fxe"/>
+            <PortraitModel value="RaynorCommanderPortrait"/>
+            <Speaker value="Character/Name/CharRaynor"/>
+            <Subtitle value="Conversation/TRaynor02/Line00071"/>
+        </AssetArray>
+    </CSound>
+    <CSound id="TRaynor02_Swann_070" parent="Campaign" Portrait="SwannPortrait" Subtitle="TRaynor02" Speaker="CharSwann" Actor="" Line="00070">
+        <AssetArray index="0">
+            <File value="LocalizedData\Sounds\VO\TRaynor02_Swann_070.ogg"/>
+            <FacialAnim value="TRaynor02_Swann_070"/>
+            <FacialGroup value="TRaynor02_Swann_070"/>
+            <FacialFile value="LocalizedData\Sounds\VO\TRaynor02_Swann_070.fxe"/>
+            <PortraitModel value="SwannPortrait"/>
+            <Speaker value="Character/Name/CharSwann"/>
+            <Subtitle value="Conversation/TRaynor02/Line00070"/>
+        </AssetArray>
+    </CSound>
+</Catalog>

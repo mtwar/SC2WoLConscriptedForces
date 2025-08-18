@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CConversation id="TRaynor02">
+        <Lines index="0">
+            <Variations index="Speaker" value=""/>
+            <Variations index="Listener" value=""/>
+            <Variations index="Camera" value=""/>
+        </Lines>
+        <Lines index="1">
+            <Variations index="Speaker" value=""/>
+            <Variations index="Listener" value=""/>
+            <Variations index="Camera" value=""/>
+        </Lines>
+        <Lines index="2">
+            <Variations index="Speaker" value=""/>
+            <Variations index="Listener" value=""/>
+            <Variations index="Camera" value=""/>
+        </Lines>
+        <Lines index="3">
+            <Variations index="Speaker" value=""/>
+            <Variations index="Listener" value=""/>
+            <Variations index="Camera" value=""/>
+        </Lines>
+        <Lines index="4">
+            <Variations index="Speaker" value=""/>
+            <Variations index="Listener" value=""/>
+            <Variations index="Camera" value=""/>
+        </Lines>
+        <Lines index="5">
+            <Variations index="Speaker" value=""/>
+            <Variations index="Listener" value=""/>
+            <Variations index="Camera" value=""/>
+        </Lines>
+        <Lines index="6">
+            <Variations index="Speaker" value=""/>
+            <Variations index="Listener" value=""/>
+            <Variations index="Camera" value=""/>
+        </Lines>
+        <Lines index="7">
+            <Variations index="Speaker" value=""/>
+            <Variations index="Listener" value=""/>
+            <Variations index="Camera" value=""/>
+        </Lines>
+        <Lines index="8">
+            <Variations index="Speaker" value=""/>
+            <Variations index="Listener" value=""/>
+            <Variations index="Camera" value=""/>
+        </Lines>
+        <Lines index="9">
+            <Variations index="Speaker" value=""/>
+            <Variations index="Listener" value=""/>
+            <Variations index="Camera" value=""/>
+        </Lines>
+        <Lines index="10">
+            <Variations index="Speaker" value=""/>
+            <Variations index="Listener" value=""/>
+            <Variations index="Camera" value=""/>
+        </Lines>
+        <Lines index="11">
+            <Variations index="Speaker" value=""/>
+            <Variations index="Listener" value=""/>
+            <Variations index="Camera" value=""/>
+        </Lines>
+        <Lines index="12">
+            <Variations index="Speaker" value=""/>
+            <Variations index="Listener" value=""/>
+            <Variations index="Camera" value=""/>
+        </Lines>
+        <Lines index="13">
+            <Variations index="Speaker" value=""/>
+            <Variations index="Listener" value=""/>
+            <Variations index="Camera" value=""/>
+        </Lines>
+        <Lines index="14">
+            <Variations index="Speaker" value=""/>
+            <Variations index="Listener" value=""/>
+            <Variations index="Camera" value=""/>
+        </Lines>
+        <Lines index="15">
+            <Variations index="Speaker" value=""/>
+            <Variations index="Listener" value=""/>
+            <Variations index="Camera" value=""/>
+        </Lines>
+        <Lines index="16">
+            <Variations index="Speaker" value=""/>
+            <Variations index="Listener" value=""/>
+            <Variations index="Camera" value=""/>
+        </Lines>
+        <Lines index="17">
+            <Variations index="Speaker" value=""/>
+            <Variations index="Listener" value=""/>
+            <Variations index="Camera" value=""/>
+        </Lines>
+        <Lines index="18">
+            <Variations index="Speaker" value=""/>
+            <Variations index="Listener" value=""/>
+            <Variations index="Camera" value=""/>
+        </Lines>
+        <Lines index="19">
+            <Variations index="Speaker" value=""/>
+            <Variations index="Listener" value=""/>
+            <Variations index="Camera" value=""/>
+        </Lines>
+        <Lines index="20">
+            <Variations index="Speaker" value=""/>
+            <Variations index="Listener" value=""/>
+            <Variations index="Camera" value=""/>
+        </Lines>
+        <Lines index="21">
+            <Variations index="Speaker" value=""/>
+            <Variations index="Listener" value=""/>
+            <Variations index="Camera" value=""/>
+        </Lines>
+        <Lines index="22">
+            <Variations index="Speaker" value=""/>
+            <Variations index="Listener" value=""/>
+            <Variations index="Camera" value=""/>
+        </Lines>
+        <Lines>
+            <Id value="Line00068"/>
+            <Text value="Conversation/TRaynor02/Line00068"/>
+            <FacialBlend value="100"/>
+            <OverlapPrevious value="500"/>
+            <AnimProps value="Talk"/>
+            <AnimBlendIn value="-1"/>
+            <AnimBlendOut value="-1"/>
+            <Objects index="Speaker" value="CharSwann"/>
+            <Objects index="Listener" value=""/>
+            <Objects index="Camera" value="Medium"/>
+            <Variations index="Speaker" value=""/>
+            <Variations index="Listener" value=""/>
+            <Variations index="Camera" value=""/>
+        </Lines>
+        <Lines>
+            <Id value="Line00069"/>
+            <Text value="Conversation/TRaynor02/Line00069"/>
+            <FacialBlend value="100"/>
+            <OverlapPrevious value="500"/>
+            <AnimProps value="Talk"/>
+            <AnimBlendIn value="-1"/>
+            <AnimBlendOut value="-1"/>
+            <Objects index="Speaker" value="CharRaynor"/>
+            <Objects index="Listener" value=""/>
+            <Objects index="Camera" value="Medium"/>
+            <Variations index="Speaker" value=""/>
+            <Variations index="Listener" value=""/>
+            <Variations index="Camera" value=""/>
+        </Lines>
+        <Groups index="5">
+            <Children index="2" value="Group00007"/>
+            <Children index="3" value="Group00003"/>
+            <Children index="4" value="Group00015"/>
+            <Children index="5" value="Group00019"/>
+            <Children index="6" value="Group00008"/>
+            <Children value="Group00014"/>
+        </Groups>
+        <Groups index="6" Id="Group00007" Name="Conversation/TRaynor02/Group00007">
+            <Children index="0" value="Line00068"/>
+            <Children value="Line00069"/>
+        </Groups>
+        <Groups index="7" Id="Group00008" Name="Conversation/TRaynor02/Group00008">
+            <Children index="0" value="Line00009"/>
+            <Children index="1" removed="1"/>
+        </Groups>
+        <Groups index="8" Id="Group00011" Name="Conversation/TRaynor02/Group00011">
+            <Children index="0" value="Group00012"/>
+            <Children value="Group00013"/>
+        </Groups>
+        <Groups index="9" Id="Group00012" Name="Conversation/TRaynor02/Group00012">
+            <Children index="0" value="Line00014"/>
+            <Children index="1" removed="1"/>
+            <Children index="2" removed="1"/>
+            <Children index="3" removed="1"/>
+            <Children index="4" removed="1"/>
+            <Children index="5" removed="1"/>
+            <Children index="6" removed="1"/>
+            <Children index="7" removed="1"/>
+        </Groups>
+        <Groups index="10" Id="Group00013" Name="Conversation/TRaynor02/Group00013">
+            <Children index="0" value="Line00044"/>
+            <Children value="Line00012"/>
+            <Children value="Line00013"/>
+            <Children value="Line00043"/>
+            <Children value="Line00023"/>
+            <Children value="Line00045"/>
+            <Children value="Line00024"/>
+            <Children value="Line00028"/>
+        </Groups>
+        <Groups index="11" Id="Group00014" Name="Conversation/TRaynor02/Group00014">
+            <Children index="0" value="Line00052"/>
+        </Groups>
+        <Groups index="12" Id="Group00015" Name="Conversation/TRaynor02/Group00015">
+            <Children index="0" value="Line00031"/>
+            <Children index="1" removed="1"/>
+        </Groups>
+        <Groups index="13" Id="Group00016" Name="Conversation/TRaynor02/Group00016">
+            <Children index="0" value="Line00003"/>
+            <Children value="Line00037"/>
+        </Groups>
+        <Groups Id="Group00019" Name="Conversation/TRaynor02/Group00019">
+            <Children value="Line00042"/>
+        </Groups>
+    </CConversation>
+</Catalog>

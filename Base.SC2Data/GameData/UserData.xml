@@ -288,7 +288,7 @@
         </Instances>
         <Instances index="9" Id="TRaynor02_4">
             <Int Int="20000">
-                <Field Id="RewardCreditsEach"/>
+                <Field Id="RewardCreditsFinal"/>
             </Int>
             <Text index="0" Text="UserData/MissionObjective/TRaynor02_4_Name"/>
         </Instances>
@@ -750,7 +750,7 @@
         </Instances>
         <Instances Id="[Override]TRaynor02_2">
             <Int Int="10000">
-                <Field Id="RewardCreditsEach"/>
+                <Field Id="RewardCreditsFinal"/>
             </Int>
         </Instances>
         <Instances Id="[Override]TRaynor03_1">

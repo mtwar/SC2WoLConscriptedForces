@@ -1,0 +1,13 @@
+include "TriggerLibs/natives"
+
+//--------------------------------------------------------------------------------------------------
+// Library: WoL Conscripted Forces
+//--------------------------------------------------------------------------------------------------
+// Variable Declarations
+unitgroup libConW_gv_inspiredUnits;
+unitgroup libConW_gv_jimRaynorHero;
+bool libConW_gv_raynorAlive;
+
+// Library Initialization
+void libConW_InitVariables ();
+

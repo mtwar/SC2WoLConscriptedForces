@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CActorUnit id="HydraliskL" parent="GenericUnitBase" unitName="HydraliskL">
+        <Aliases value="_UnitMedium"/>
+        <Macros value="ZergBurrowStandardAnimMacro"/>
+        <Macros value="ZergMediumBurrowEffects"/>
+        <On Terms="Abil.attack.ReadyStart" Send="AnimGroupApply Ready"/>
+        <On Terms="WeaponStart.*.AttackStart; WeaponTargetElevation GE 20.000000" Send="AnimBracketStart Attack Attack,Superior"/>
+        <On Terms="WeaponStart.*.AttackStart; WeaponTargetElevation LE -20.000000" Send="AnimBracketStart Attack Attack,Inferior"/>
+        <On Terms="WeaponStart.*.AttackStart; WeaponTargetDistance LE 0.500000" Send="AnimBracketStart Attack Attack,Cover"/>
+        <On Terms="WeaponStart.*.AttackStart" Send="AnimBracketStart Attack Attack"/>
+        <On Terms="WeaponStop.*.AttackStop" Send="AnimBracketStop Attack"/>
+        <On Terms="Abil.attack.ReadyStop" Send="AnimGroupRemove Ready"/>
+        <On Terms="WeaponStart.*.AttackStart; WeaponTargetDistance LE 0.500000; AnimPlaying AttackCover Cover,00" Send="TimerSet 0.400000 MeleeAttackLaunch"/>
+        <On Terms="WeaponStart.*.AttackStart; WeaponTargetDistance LE 0.500000; AnimPlaying AttackCover Cover,01" Send="TimerSet 0.100000 MeleeAttackLaunch"/>
+        <On Terms="TimerExpired; TimerName MeleeAttackLaunch" Send="Create HydraliskMeleeAttackLaunch"/>
+        <Model value="Hydralisk_PremiumSkin_Noxious"/>
+        <Scale value="2.000000"/>
+        <EventDataSound Name="HydraliskAttackImpactMelee" Actor="UnitSound" Sound="Hydralisk_AttackImpactMelee"/>
+        <BuildModel value="Hydralisk_PremiumSkin_Noxious"/>
+        <DeathArray index="Normal" ModelLink="HydraliskDeath" SoundLink="HunterKiller_Explode"/>
+        <PlacementModel value="Hydralisk_PremiumSkin_Noxious"/>
+        <PortraitModel value="Hydralisk_PremiumSkin_Noxious_Portrait"/>
+        <WalkAnimMoveSpeed value="2.086"/>
+        <BarOffset value="80"/>
+        <GroupIcon>
+            <Image value="Assets\Textures\wireframe-collection-noxious-hydralisk.dds"/>
+        </GroupIcon>
+        <GroupSoundArray index="Ready" value="HydraliskReady"/>
+        <GroupSoundArray index="Help" value="HydraliskHelp"/>
+        <GroupSoundArray index="What" value="HydraliskWhat"/>
+        <GroupSoundArray index="Yes" value="HydraliskYes"/>
+        <GroupSoundArray index="Attack" value="HydraliskYes"/>
+        <GroupSoundArray index="Pissed" value="HydraliskPissed"/>
+        <HeroIcon value="Assets\Textures\btn-unit-collection-noxious-hydralisk.dds"/>
+        <LifeArmorIcon value="Assets\Textures\btn-upgrade-zerg-groundcarapace-level0.dds"/>
+        <SoundArray index="Ready" value="HunterKiller_Ready"/>
+        <SoundArray index="Help" value="HydraliskHelp"/>
+        <SoundArray index="What" value="HunterKiller_What"/>
+        <SoundArray index="Yes" value="HunterKiller_Yes"/>
+        <SoundArray index="Attack" value="HunterKiller_Attack"/>
+        <SoundArray index="Pissed" value="HunterKiller_Pissed"/>
+        <UnitIcon value="Assets\Textures\btn-unit-collection-noxious-hydralisk.dds"/>
+        <Wireframe>
+            <Image value="Assets\Textures\wireframe-collection-noxious-hydralisk.dds"/>
+        </Wireframe>
+    </CActorUnit>
+    <CActorAction id="HydaliskLAttack" parent="GenericAttack" effectImpact="HydraliskLU" effectLaunch="HydraliskL">
+        <LaunchSiteOps Ops="SOpAttachHarness SOpForwardImpactGuide"/>
+        <LaunchAttachQuery Methods="AMFilterWeapon AMRandomUniform"/>
+        <LaunchAssets Model="HunterKillerAttackLaunch" Sound="HunterKiller_AttackLaunchRanged"/>
+        <Beam value="HunterKillerAttackBeam"/>
+        <Missile value="HydraliskLAttackMissile"/>
+        <ImpactMap index="None" Model="" Sound="HunterKiller_AttackImpactRanged" ModelReaction="HunterKillerAttackImpactReaction"/>
+        <ImpactMap index="Shield" Sound="HunterKillerAttackImpactShield" ModelReaction="HunterKillerAttackImpactReactionShield"/>
+        <ImpactModel value=""/>
+        <DamageMap index="None" Model="HunterKillerAttackDamage" Sound="HunterKillerAttackDamage" ModelReaction="HunterKillerAttackDamageReaction"/>
+        <DamageMap index="Shield" Sound="HunterKillerAttackDamageShield" ModelReaction="HunterKillerAttackDamageReactionShield"/>
+    </CActorAction>
+    <CActorMissile id="HydraliskLAttackMissile" parent="GenericAttackMissile" unitName="HydraliskLWeapon">
+        <Model value="HunterKillerWeapon"/>
+    </CActorMissile>
+    <CActorAction id="HydraliskLMeleeAttack" parent="GenericAttack" effectAttack="HydraliskLMelee">
+        <LaunchAssets Model="HunterKillerMeleeAttackLaunch" Sound="HunterKillerMeleeAttackLaunch"/>
+        <Beam value="HunterKillerMeleeAttackBeam"/>
+        <Missile value="HunterKillerMeleeAttackMissile"/>
+        <ImpactMap index="None" Model="HunterKillerMeleeAttackImpact" Sound="HunterKillerMeleeAttackImpact" ModelReaction="HunterKillerMeleeAttackImpactReaction"/>
+        <ImpactMap index="Shield" Sound="HunterKillerMeleeAttackImpactShield" ModelReaction="HunterKillerMeleeAttackImpactReactionShield"/>
+        <DamageMap index="None" Model="HunterKillerMeleeAttackDamage" Sound="HunterKillerMeleeAttackDamage" ModelReaction="HunterKillerMeleeAttackDamageReaction"/>
+        <DamageMap index="Shield" Sound="HunterKillerMeleeAttackDamageShield" ModelReaction="HunterKillerMeleeAttackDamageReactionShield"/>
+        <ShieldFlashType value="Header"/>
+    </CActorAction>
+</Catalog>

@@ -1,0 +1,42 @@
+include "TriggerLibs/NativeLib"
+
+include "LibConW_h"
+
+//--------------------------------------------------------------------------------------------------
+// Library: WoL Conscripted Forces
+//--------------------------------------------------------------------------------------------------
+// External Library Initialization
+void libConW_InitLibraries () {
+    libNtve_InitVariables();
+}
+
+// Variable Initialization
+bool libConW_InitVariables_completed = false;
+
+void libConW_InitVariables () {
+    if (libConW_InitVariables_completed) {
+        return;
+    }
+
+    libConW_InitVariables_completed = true;
+
+    libConW_gv_inspiredUnits = UnitGroupEmpty();
+    libConW_gv_jimRaynorHero = UnitGroupEmpty();
+}
+
+//--------------------------------------------------------------------------------------------------
+// Library Initialization
+//--------------------------------------------------------------------------------------------------
+bool libConW_InitLib_completed = false;
+
+void libConW_InitLib () {
+    if (libConW_InitLib_completed) {
+        return;
+    }
+
+    libConW_InitLib_completed = true;
+
+    libConW_InitLibraries();
+    libConW_InitVariables();
+}
+

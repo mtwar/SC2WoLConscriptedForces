@@ -1,0 +1,3 @@
+﻿Conversation/TRaynor02/Group00007=Dominion starport
+Conversation/TRaynor02/Line00070=The Dominion are making wraith fighters now?
+Conversation/TRaynor02/Line00071=Damn, that's all we need! We better take that thing down or it's gonna cause some havoc! Secure that Starport!

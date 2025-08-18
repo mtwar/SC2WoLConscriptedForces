@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Catalog>
+    <CEffectLaunchMissile id="HydraliskL">
+        <ValidatorArray index="0" value="HunterKillerTargetFilters"/>
+        <EditorCategories value="Race:Zerg"/>
+        <ImpactEffect value="HydraliskLU"/>
+    </CEffectLaunchMissile>
+    <CEffectDamage id="HydraliskLMelee" parent="DU_WEAP">
+        <EditorCategories value="Race:Zerg"/>
+        <Kind value="Ranged"/>
+        <Amount value="32"/>
+    </CEffectDamage>
+    <CEffectDamage id="HydraliskLU" parent="DU_WEAP">
+        <EditorCategories value="Race:Zerg"/>
+        <Kind value="Ranged"/>
+        <Amount value="32"/>
+    </CEffectDamage>
+</Catalog>

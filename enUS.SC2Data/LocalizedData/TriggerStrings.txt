@@ -1,0 +1,16 @@
+﻿Category/Name/lib_ConW_0C034F85=Units
+Category/Name/lib_ConW_962A0601=Raynor
+Category/Name/lib_ConW_9DDEE019=Variables
+Category/Name/lib_ConW_9E9F48F5=Auras
+Category/Name/lib_ConW_D10A1F47=Variables
+Category/Name/lib_ConW_D6EE70BF=Lifecycle
+Category/Name/lib_ConW_E0C909D5=Inspiration
+Library/Name/ConW=WoL Conscripted Forces
+Trigger/Name/lib_ConW_74DC45A6=Raynor Build Pressed
+Trigger/Name/lib_ConW_79972210=Raynor Trained
+Trigger/Name/lib_ConW_8E588009=Apply Inspiration
+Trigger/Name/lib_ConW_F074F150=Raynor Killed
+Variable/Name/lib_ConW_2A73163F=Unit
+Variable/Name/lib_ConW_2BE546E3=Raynor Alive
+Variable/Name/lib_ConW_97BC2A0D=Inspired Units
+Variable/Name/lib_ConW_A333015E=Jim Raynor Hero
