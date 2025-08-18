@@ -3,5 +3,6 @@
     <CMap id="TRaynor02">
         <ObjectiveArray value="TRaynor02_3"/>
         <ObjectiveArray value="TRaynor02_4"/>
+        <ObjectiveArray value="TRaynor02_5"/>
     </CMap>
 </Catalog>

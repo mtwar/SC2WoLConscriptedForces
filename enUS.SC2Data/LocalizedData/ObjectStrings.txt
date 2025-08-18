@@ -13,6 +13,7 @@ Objective/EditorPrefix/TRaynor01_4=TRaynor01 -
 Objective/EditorPrefix/TRaynor01_5=TRaynor01 -
 Objective/EditorPrefix/TRaynor02_3=TRaynor02 -
 Objective/EditorPrefix/TRaynor02_4=TRaynor02 -
+Objective/EditorPrefix/TRaynor02_5=TRaynor02 -
 Sound/Name/RaynorDamnAllWeNeedSecureStarport=TRaynor02Raynor00069
 Sound/Name/TRaynor02Raynor000691=TRaynor02Raynor000691
 Sound/Name/TRaynor02Swann000681=TRaynor02Swann000681

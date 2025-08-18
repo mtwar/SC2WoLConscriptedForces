@@ -12,4 +12,7 @@
     <CObjective id="TRaynor02_4">
         <Type value="Optional"/>
     </CObjective>
+    <CObjective id="TRaynor02_5">
+        <Type value="Optional"/>
+    </CObjective>
 </Catalog>
