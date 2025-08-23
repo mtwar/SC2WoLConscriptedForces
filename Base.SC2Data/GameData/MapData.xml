@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Catalog>
+    <CMap id="TRaynor01">
+        <ObjectiveArray value="TRaynor01_4"/>
+        <ObjectiveArray value="TRaynor01_5"/>
+    </CMap>
     <CMap id="TRaynor02">
         <ObjectiveArray value="TRaynor02_3"/>
         <ObjectiveArray value="TRaynor02_4"/>
